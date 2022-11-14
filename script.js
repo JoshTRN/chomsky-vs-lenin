@@ -1,3 +1,4 @@
+var href = false;
 var slideout = new Slideout({
   panel: document.getElementById("content"),
   menu: document.getElementById("nav"),
@@ -20,12 +21,15 @@ window.addEventListener("load", manageSlideoutBasedOnScreenWidth);
 textToc = document.getElementById("text-table-of-contents");
 textToc.getElementsByTagName("ul")[0].childNodes.forEach((el) => {
   el.addEventListener("click", (e) => {
-    e.preventDefault();
-    _.defer(function () {
-      const clickedHrefId = el.firstChild.getAttribute("href");
-      const href = $(clickedHrefId);
-      href[0].scrollIntoView();
-      manageSlideoutBasedOnScreenWidth();
-    });
+    manageSlideoutBasedOnScreenWidth();
+    const clickedHrefId = el.firstChild.getAttribute("href");
+    href = $(clickedHrefId)[0];
   });
+});
+
+window.addEventListener("transitionend", () => {
+  if (href) {
+    href.scrollIntoView();
+    href = false;
+  }
 });
