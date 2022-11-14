@@ -21,10 +21,11 @@ textToc = document.getElementById("text-table-of-contents");
 textToc.getElementsByTagName("ul")[0].childNodes.forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
-    manageSlideoutBasedOnScreenWidth();
-    console.log(el.firstChild);
-    const clickedHrefId = el.firstChild.getAttribute("href");
-    const href = $(clickedHrefId);
-    href[0].scrollIntoView();
+    _.defer(function () {
+      const clickedHrefId = el.firstChild.getAttribute("href");
+      const href = $(clickedHrefId);
+      href[0].scrollIntoView();
+      manageSlideoutBasedOnScreenWidth();
+    });
   });
 });
