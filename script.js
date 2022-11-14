@@ -7,7 +7,6 @@ var slideout = new Slideout({
 });
 
 const manageSlideoutBasedOnScreenWidth = () => {
-  console.log("managing slideout");
   if (window.innerWidth > 768) {
     slideout.open();
   } else {
@@ -19,9 +18,15 @@ window.addEventListener("resize", manageSlideoutBasedOnScreenWidth);
 window.addEventListener("load", manageSlideoutBasedOnScreenWidth);
 
 textToc = document.getElementById("text-table-of-contents");
-textToc.getElementsByTagName("ul")[0].childNodes.forEach((el) => {
-  el.addEventListener("click", (e) => {
+Array.from(
+  textToc.getElementsByTagName("ul")[0].getElementsByTagName("li")
+).forEach((el) => {
+  el.getElementsByTagName("a")[0].addEventListener("click", (e) => {
+    e.preventDefault();
+    const oldDuration = slideout._duration;
+    slideout._duration = 1;
     manageSlideoutBasedOnScreenWidth();
+    slideout._duration = oldDuration;
     const clickedHrefId = el.firstChild.getAttribute("href");
     href = $(clickedHrefId)[0];
   });
