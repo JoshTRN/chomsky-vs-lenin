@@ -6,6 +6,7 @@ var slideout = new Slideout({
 });
 
 const manageSlideoutBasedOnScreenWidth = () => {
+  console.log("managing slideout");
   if (window.innerWidth > 768) {
     slideout.open();
   } else {
@@ -13,8 +14,17 @@ const manageSlideoutBasedOnScreenWidth = () => {
   }
 };
 
-window.addEventListener("wheel", (e) => {
-  console.log(e);
-});
 window.addEventListener("resize", manageSlideoutBasedOnScreenWidth);
 window.addEventListener("load", manageSlideoutBasedOnScreenWidth);
+
+textToc = document.getElementById("text-table-of-contents");
+textToc.getElementsByTagName("ul")[0].childNodes.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    manageSlideoutBasedOnScreenWidth();
+    console.log(el.firstChild);
+    const clickedHrefId = el.firstChild.getAttribute("href");
+    const href = $(clickedHrefId);
+    href[0].scrollIntoView();
+  });
+});
