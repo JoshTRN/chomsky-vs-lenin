@@ -1,5 +1,12 @@
 var href = false;
-var slideout = new Slideout({
+
+const toc = document.getElementById("table-of-contents");
+const nav = document.createElement("nav");
+nav.id = "nav";
+nav.append(toc);
+document.getElementsByTagName("body")[0].prepend(nav);
+
+const slideout = new Slideout({
   panel: document.getElementById("content"),
   menu: document.getElementById("nav"),
   padding: 300,
@@ -8,8 +15,12 @@ var slideout = new Slideout({
 
 const manageSlideoutBasedOnScreenWidth = () => {
   if (window.innerWidth > 768) {
+    const content = document.getElementById("content");
+    const offset = window.innerWidth - 300;
+    content.style.maxWidth = offset >= 860 ? "860px" : offset + "px";
     slideout.open();
   } else {
+    content.style.maxWidth = "860px";
     slideout.close();
   }
 };

@@ -18,6 +18,7 @@ body {
 
 #content {
   background-color: rgb(1, 6, 8);
+  margin-left: 0;
 }
 
 #table-of-contents {
@@ -122,7 +123,7 @@ blockquote {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 300px;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -145,12 +146,6 @@ blockquote {
   background-color: #FFF; /* A background-color is required */
   min-height: 100vh;
 }
-
-/* .slideout-open, */
-/* .slideout-open body, */
-/* .slideout-open .slideout-panel { */
-/*   overflow: hidden; */
-/* } */
 
 .slideout-open .slideout-menu {
   display: block;
