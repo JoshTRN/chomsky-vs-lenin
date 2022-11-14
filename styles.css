@@ -67,6 +67,12 @@ blockquote {
 
 @media screen and (max-width: 768px) {
 
+  #table-of-contents {
+    display: block; !important
+    width: 100%; !important
+    position: relative; !important
+  }
+
   #table-of-contents h2 a {
     display: block; !important
     width: 100%; !important

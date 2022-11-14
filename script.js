@@ -1,6 +1,6 @@
 var slideout = new Slideout({
   panel: document.getElementById("content"),
-  menu: document.getElementById("table-of-contents"),
+  menu: document.getElementById("nav"),
   padding: 300,
   tolerance: 70,
 });
