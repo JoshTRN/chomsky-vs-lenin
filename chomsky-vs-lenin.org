@@ -3,16 +3,7 @@
 #+AUTHOR: JL & MA
 #+SETUPFILE: https://distro.tube/org-html-themes/org/theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index.html
-#+HTML_HEAD: <style>body{padding-top:0px; background-color: rgb(0, 0, 0)}</style>
-#+HTML_HEAD: <style>::-webkit-scrollbar {background-color: #080f11; color: #ffffff;}</style>
-#+HTML_HEAD: <style>::-webkit-scrollbar-corner {background-color: #000000;}</style>
-#+HTML_HEAD: <style>::-webkit-scrollbar-thumb {background-color: #5b676d;}</style>
-#+HTML_HEAD: <style>#content {background-color: rgb(1, 6, 8);}</style>
-#+HTML_HEAD: <style>#table-of-contents {background-color: rgb(0, 0, 0); border-right-color: rgb(209, 191, 161);}</style>
-#+HTML_HEAD: <style> @media screen and (max-width: 768px) #content {padding: 1.618em 1.5em;}</style>
-#+HTML_HEAD: <style>html{scroll-behavior: smooth;}</style>
-#+HTML_HEAD: <style>blockquote{background-color:#1c013a3b; color: #bcd2e1c9;}</style>
-#+HTML_HEAD: <style>:target {-webkit-animation: target-fade 3s 1; -moz-animation: target-fade 3s 1;} @-webkit-keyframes target-fade {0% { background-color: rgba(22,46,1,1); } 100% { background-color: rgba(22,46,0,0); }} @-moz-keyframes target-fade {0% { background-color: rgba(22,46,1,1); } 100% { background-color: rgba(22,46,0,0); }}</style>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles.css" />
 #+OPTIONS: num:nil
 
 Version 1.1 [15th/July/2020]
