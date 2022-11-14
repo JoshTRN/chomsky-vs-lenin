@@ -29,6 +29,10 @@ Array.from(
     slideout._duration = oldDuration;
     const clickedHrefId = el.firstChild.getAttribute("href");
     href = $(clickedHrefId)[0];
+    if (window.innerWidth > 768) {
+      href.scrollIntoView();
+      href = false;
+    }
   });
 });
 
