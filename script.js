@@ -32,6 +32,7 @@ Array.from(
     if (window.innerWidth > 768) {
       href.scrollIntoView();
       href = false;
+      slideout.open();
     }
   });
 });

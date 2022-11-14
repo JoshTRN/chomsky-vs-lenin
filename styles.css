@@ -155,3 +155,11 @@ blockquote {
 .slideout-open .slideout-menu {
   display: block;
 }
+
+p {
+  font-size: 115%;
+}
+
+h2 {
+  font-size: 160%;
+}
