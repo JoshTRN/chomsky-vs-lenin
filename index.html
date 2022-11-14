@@ -1,0 +1,2315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-13 Sun 22:11 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chomsky Vs. Lenin</title>
+<meta name="author" content="JL &amp; MA" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://distro.tube/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<style>body{padding-top:0px; background-color: rgb(0, 0, 0)}</style>
+<style>::-webkit-scrollbar {background-color: #080f11; color: #ffffff;}</style>
+<style>::-webkit-scrollbar-corner {background-color: #000000;}</style>
+<style>::-webkit-scrollbar-thumb {background-color: #5b676d;}</style>
+<style>#content {background-color: rgb(1, 6, 8);}</style>
+<style>#table-of-contents {background-color: rgb(0, 0, 0); border-right-color: rgb(209, 191, 161);}</style>
+<style>html{scroll-behavior: smooth;}</style>
+<style>blockquote{background-color:#1c013a3b; color: #bcd2e1c9;}</style>
+<style>:target {-webkit-animation: target-fade 3s 1; -moz-animation: target-fade 3s 1;} @-webkit-keyframes target-fade {0% { background-color: rgba(22,46,1,1); } 100% { background-color: rgba(22,46,0,0); }} @-moz-keyframes target-fade {0% { background-color: rgba(22,46,1,1); } 100% { background-color: rgba(22,46,0,0); }}</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Chomsky Vs. Lenin</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org1f06814">Introduction</a></li>
+<li><a href="#org22ea265">Marxism is a religion</a></li>
+<li><a href="#org814c22a">Marx on evolutionary socialism</a></li>
+<li><a href="#org93878c4">Marx vs. the Bolsheviks on peasant revolution</a></li>
+<li><a href="#org0636f89">Lenin was a heterodox Marxist</a></li>
+<li><a href="#orgda642ec">Lenin’s libertarian opportunism</a></li>
+<li><a href="#orgcfc2446">Vanguardism = exploitative intelligentsia</a></li>
+<li><a href="#orge57d146">The October Revolution was a coup</a></li>
+<li><a href="#org0299a7f">The Bolsheviks vs. the Constituent Assembly</a></li>
+<li><a href="#org18836a5">The Bolsheviks vs. workers' democracy</a></li>
+<li><a href="#orgd4aab0b">The forced industrialisation/collectivisation of the peasantry</a></li>
+<li><a href="#org5c4ab0a">Lenin and Trotsky's authoritarianism</a></li>
+<li><a href="#org8e507d1">Socialism in the USSR</a></li>
+<li><a href="#orgaee3b27">Lenin on state capitalism in the USSR</a></li>
+<li><a href="#orgfe6f096">Lenin on socialism in the USSR</a></li>
+<li><a href="#orgfdd9b64">Conclusion</a></li>
+<li><a href="#orgc730590">Bibliography</a></li>
+<li><a href="#org5198f0f">Notes</a></li>
+</ul>
+</div>
+</div>
+<p>
+Version 1.1 [15th/July/2020]
+</p>
+
+<div id="outline-container-org1f06814" class="outline-2">
+<h2 id="org1f06814">Introduction</h2>
+<div class="outline-text-2" id="text-org1f06814">
+<p>
+Professor Noam Chomsky needs no introduction. Beyond his distinguished academic career in fields such as linguistics, cognitive science, and philosophy, Prof. Chomsky has played an indispensable role in documenting the violent, oppressive, and destructive track-record of capitalism in general and Western liberal democracies—especially the United States—in particular over the last half-century. Prof. Chomsky and Prof. Herman’s “propaganda model”—a rigorous, scientific model of modern media that pinpointed the institutional and economic pressures, filters, and barriers that ensure that news coverage in the mass media conforms to the interests of capitalists and the bourgeois state—is also indispensable for anyone interested in politics. Prof. Chomsky is probably the most famous living leftist, for good reason.
+</p>
+
+<p>
+As an outspoken anarchist, anarcho-syndicalist, or libertarian socialist, Prof. Chomsky is also probably the most famous living leftwing critic of Vladimir Lenin, Leon Trotsky, and the Bolshevik Party, whom he has accused on multiple occasions of betraying socialism and the Russian working class during the October Revolution and the establishment of the Russian Soviet Federative Socialist Republic (RSFSR) and the Union of Soviet Socialist Republics (USSR).<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> Certainly, Prof. Chomsky’s criticisms are inescapable for any Leninist, Trotskyist, or Stalinist: the relevant excerpts from his lectures on YouTube alone have hundreds of thousands of views.
+</p>
+
+<p>
+Respectfully, we disagree with Prof. Chomsky in this regard: all of his criticisms of Lenin, Trotsky, and the Bolsheviks are unjustified in one way or another, variously suffering from unsubstantiated premises, contradictions, and grave misconceptions. We are not the first to tackle these questions,<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup> but we aim to provide the most systematic and comprehensive treatment thereon thus far. What follows is a list of Prof. Chomsky’s criticisms (as expressed in various public lectures and essays) and refutations thereof. On a final (stylistic) note, most of the <b>emboldened</b> text in quotations forthwith is our emphasis, rather than the emphasis of the original authors or speakers.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org22ea265" class="outline-2">
+<h2 id="org22ea265">Marxism is a religion</h2>
+<div class="outline-text-2" id="text-org22ea265">
+<p>
+According to Prof. Chomsky, Marxism is more like a religion than a science:
+</p>
+
+<blockquote>
+<p>
+The concept of Marxism is one that I find troublesome. In physics, for example, there’s nothing like Einsteinism, because Einstein isn’t God who you worship—rather, he’s a human being who had important things to say, and like every other human being, made mistakes; so you learn from what he had to say, and you disregard his mistakes. Now, <b>Marxism, the concept, in my view, belongs to the history of organized religion. It’s a kind of worship of an individual</b> that makes no sense. If you look at Marx himself and other people who’ve been working in that tradition, you learn what’s valuable, and you disregard what’s wrong, and then after that we just go and look. So, for example, take say socialism: Marx had almost nothing to say about it. I mean, if you read&#x2026; I’m not a great Marx specialist, but as far as I understand (and I’ve read a fair amount), there are a few scattered sentences in Marx’s writings about socialism. He’s a theorist of capitalism. He was a theorist of basically 19th-Century capitalism (perfectly naturally), and he developed sort of an abstract model of the capitalist system and its properties, from which I think there’s a lot to learn, and any intelligent person should read it and learn what you can from it, as you learn from others. To assume that it offers a doctrine for today makes no sense. I can’t imagine that Marx would have believed that. He also wrote important things about contemporary affairs—for example about the British in India—certainly worth reading, but if we were still repeating those things now, civilization would be dead [since] we should have learned something in the last hundred years. So yes, there’s contributions, as there is from the rest of our cultural tradition, and you learn from them what’s important—then you disregard what’s not useful.<sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
+</p>
+</blockquote>
+
+<p>
+There are several problems here. Firstly, theories within science and academia are sometimes named after a notable founder or theoretician (such as Keynesian economics and Newtonian physics) without being religions, pace Prof. Chomsky. Therefore, Marxism being named after Marx is not in and off itself indicative of Marxism being a religion.
+</p>
+
+<p>
+More generally, Prof. Chomsky simply fails to justify his claim that Marxism is like a religion, and indeed, goes on to repeatedly contradict or undermine this characterisation. For example, he elsewhere criticises revolutionary Marxists for disagreeing with Marx on the viability of reformism, and for disagreeing with Marx on the peasant question, and for disagreeing with Marx (or at least, “the mainstream Marxists”) on vanguardism. Prof.
+</p>
+
+<p>
+Chomsky even criticises Lenin and the Bolsheviks for being unorthodox Marxists! (Prof. Chomsky is actually mistaken on most of these issues, but that doesn’t matter for the purposes of an internal critique.) Presumably, Prof. Chomsky’s charge of Marxism being a religion is meant to suggest that Marxists are unwilling to concede when Marx was wrong, which is in tension with his claims that Marxists rejected the views of Marx.
+</p>
+
+<p>
+Indeed, in the case of revolution versus reform (see below), Lenin explicitly did exactly as Prof. Chomsky advised: he disagreed with Marx’s analysis precisely due to changing conditions, which required a revision of political strategy. <i>Pace</i> Chomsky, Marx is evidently considered (at least by Lenin and his ilk) to be an important but fallible earlier theorist, not a god whose word is eternally binding.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org814c22a" class="outline-2">
+<h2 id="org814c22a">Marx on evolutionary socialism</h2>
+<div class="outline-text-2" id="text-org814c22a">
+<p>
+According to Prof. Chomsky, Marx acknowledged the plausibility of evolution (as opposed
+to revolution) towards socialism or communism (at least in the case of Britain), in
+contradiction to later revolutionary Marxism:
+</p>
+
+
+<blockquote>
+<p>
+What he [i.e., Marx] believed was utterly inconsistent with what are called the communist/socialist movements—even more the communist than the social-democratic ones. After all, <b>he believed that in England, the social-democratic society of his day, that there could be a parliamentary road to communism</b>, because there was enough participation of the public in decisions.<sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+You know, I don’t regard Lenin as part of the Marxist tradition, frankly. What the Marxist tradition is, who knows, but it wasn’t Marx’s position. I mentioned his belief in the revolutionary potential of the Russian peasantry. There is hardly a hint of that in Lenin. Marx had a lot of different views. For example, he thought it might be possible to reach socialism by parliamentary means in the more bourgeois democratic societies. England was his model, of course, he didn’t rule it out.<sup><a id="fnr.5" class="footref" href="#fn.5" role="doc-backlink">5</a></sup>
+</p>
+</blockquote>
+
+<p>
+Nothing interesting seems to follow from this, unless revolutionary Marxism is supposed to be like a religion, and revolutionary Marxists are thus like believers who are out of accord with their professed scripture. If instead revolutionary Marxists are proponents of a scientific approach to society and politics (as they claim), and Marx is understood to be important but fallible, then nothing interesting follows merely from the fact that they may occasionally disagree with Marx. Moreover, even if Marx was correct that a transition to socialism was plausible in 19th-Century Britain, it doesn’t necessarily follow that such a transition remains plausible under present conditions—after all, capitalism and the protective arsenal of the bourgeoisie and the bourgeois state have evolved since then. Indeed, this is exactly Lenin’s view, as expressed in <i>State and Revolution</i>:
+</p>
+
+<blockquote>
+<p>
+It is interesting to note, in particular, two points in the above-quoted argument of Marx. First, he restricts his conclusion to the Continent. This was understandable in 1871, when Britain was still the model of a purely capitalist country, but without a militarist clique and, to a considerable degree, without a bureaucracy. Marx therefore excluded Britain, where a revolution, even a people’s revolution, then seemed possible, and indeed was possible, <i>without</i> the precondition of destroying “ready-made state machinery”.
+</p>
+
+<p>
+Today, in 1917, at the time of the first great imperialist war, this restriction made by Marx is no longer valid. Both Britain and America, the biggest and the last representatives—in the whole world—of Anglo-Saxon “liberty”, in the sense that they had no militarist cliques and bureaucracy, have completely sunk into the all-European filthy, bloody morass of bureaucratic-military institutions which subordinate everything to themselves, and suppress everything. Today, in Britain and America, too, “the precondition for every real people’s revolution” is the <i>smashing</i>, the destruction of the “ready-made state machinery” (made and brought up to the “European”, general imperialist, perfection in those countries in the years 1914-17).<sup><a id="fnr.6" class="footref" href="#fn.6" role="doc-backlink">6</a></sup>
+</p>
+</blockquote>
+
+<p>
+It is notable that Prof. Chomsky did not mention Lenin’s view on this matter, since he explicitly cites State and Revolution elsewhere; this is probably explained by Prof. Chomsky’s reliance on a secondary source in this regard (see below). Regardless, Prof. Chomsky’s criticism is not substantive, in that he fails to respond to Lenin’s reasoning regarding the changing conditions necessitating changing tactics.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org93878c4" class="outline-2">
+<h2 id="org93878c4">Marx vs. the Bolsheviks on peasant revolution</h2>
+<div class="outline-text-2" id="text-org93878c4">
+<p>
+According to Prof. Chomsky, Marx recognised the revolutionary potential of the peasantry towards the end of his career—an inconvenient fact that the Bolsheviks later suppressed:
+</p>
+
+<blockquote>
+<p>
+In the last 20 or 30 years of his life, Marx was working on peasant society in Russia. There were the Narodniks, the urban intellectuals [who] went out to the countryside to collect information to figure out how the peasants are living and so on and so forth, trying to assist them and things. And they collected tonnes of data, and Marx was just pouring over the data, and he became convinced that there’s real revolutionary potential in peasant society; the peasant communes, a peasant co-operative tradition, and so on. The urban socialists—both the Bolsheviks and the social democrats—literally suppressed all that work. It was just too inconsistent with their own class- interests, controlling social movements; so that was gone.<sup><a id="fnr.7" class="footref" href="#fn.7" role="doc-backlink">7</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+The peasant revolutionary forces were very much opposed to this incidentally. As distinct from Marx who saw revolutionary potential in the Russian peasantry, the urban communists, like Lenin were strongly opposed to that. In fact, a lot of Marx’s later work was even suppressed, because they didn’t like what he was saying.<sup><a id="fnr.8" class="footref" href="#fn.8" role="doc-backlink">8</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+You know, I don’t regard Lenin as part of the Marxist tradition, frankly. What the Marxist tradition is, who knows, but it wasn’t Marx’s position. I mentioned his belief in the revolutionary potential of the Russian peasantry. There is hardly a hint of that in Lenin. <sup><a id="fnr.9" class="footref" href="#fn.9" role="doc-backlink">9</a></sup>
+</p>
+</blockquote>
+
+<p>
+These claims are not merely totally unsubstantiated—they are completely wrong, insofar as Lenin, Trotsky, and the Bolsheviks are concerned. Not only was Lenin’s revolutionary strategy for Russia and similar semi-feudal or backward countries—a worker-led worker-peasant alliance—predicated upon the revolutionary potential of the peasantry (“the proletariat could only assume power with the aid of the peasantry”),<sup><a id="fnr.10" class="footref" href="#fn.10" role="doc-backlink">10</a></sup> he explicitly cited the precedent of Marx on this point:
+</p>
+
+<blockquote>
+<p>
+Russia’s backwardness merged in a peculiar way the proletarian revolution against the bourgeoisie with the peasant revolution against the landowners. That is what we started from in October 1917, and we would not have achieved victory so easily then if we had not. As long ago as 1856, Marx spoke, in reference to Prussia; of the possibility of a peculiar combination of proletarian revolution and peasant war. From the beginning of 1905 the Bolsheviks advocated the idea of a revolutionary-democratic dictatorship of the proletariat and the peasantry.<sup><a id="fnr.11" class="footref" href="#fn.11" role="doc-backlink">11</a></sup>
+</p>
+</blockquote>
+
+<p>
+Even though Trotsky differed with Lenin on the question of the temporary inclusion of the rich peasantry into this revolutionary alliance, he too affirmed in general terms the worker-led worker-peasant alliance—a strategy that became generalised throughout the international Trotskyist movement and continues to be advocated up to the present day.<sup><a id="fnr.12" class="footref" href="#fn.12" role="doc-backlink">12</a></sup> Prof. Chomsky’s claim that the Bolsheviks suppressed Marx’s view on the revolutionary potential of the peasants—or that Lenin only hinted at this—is thus completely false.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0636f89" class="outline-2">
+<h2 id="org0636f89">Lenin was a heterodox Marxist</h2>
+<div class="outline-text-2" id="text-org0636f89">
+<p>
+According to Prof. Chomsky, Lenin was a rightwing deviation from orthodox Marxism:
+</p>
+
+<blockquote>
+<p>
+<b>Lenin was a rightwing deviation of the socialist movement</b>, and he was so regarded by the mainstream Marxists. We’ve forgotten who the mainstream Marxists were because they lost, and you only remember the guys who won, but if you go back to that period, the mainstream Marxists were people like, for example, Anton Pannekoek, who was head of education for the Marxist movement; he’s one of the people who Lenin later denounced as an infantile leftist, but he was one of the leading intellectuals of the actual Marxist movement. Rosa Luxemburg was another mainstream Marxist and there were others—in fact, Trotsky was one up until 1917. They were all very critical of Leninism because of what they regarded as this opportunistic vanguardism, the idea that the radical intelligentsia were going to exploit popular movements to seize state power and then to use that state power to whip the population into the society that they chose. Now, that was quite inconsistent with Marxism as understood by the mainstream—I’d say ‘left’—Marxists. From this point of view, Bolshevism was a rightwing deviation. Trotsky made the same points up till 1917.<sup><a id="fnr.13" class="footref" href="#fn.13" role="doc-backlink">13</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+It was sharply criticized back in the early years of the twentieth century by Marxists, in fact by some of his later associates. Although some of the critics, like Rosa Luxemburg, pointed out that Lenin’s program, which they regarded as pretty right wing, and I do too, was, the image was, that there would be a proletarian revolution, the party will take over from the proletariat, the central committee would take over from the party and the maximal leader will take over from the central committee. Pretty much what happened, not precisely but roughly what happened. [&#x2026;] You know, I don’t regard Lenin as part of the Marxist tradition, frankly. What the Marxist tradition is, who knows, but it wasn’t Marx’s position. I mentioned his belief in the revolutionary potential of the Russian peasantry. There is hardly a hint of that in Lenin.<sup><a id="fnr.14" class="footref" href="#fn.14" role="doc-backlink">14</a></sup>
+</p>
+</blockquote>
+
+<p>
+Sans some kind of essentialism regarding Marxism, Chomsky can be understood to be saying that Lenin disagreed with Marx (which has been dealt with already) and/or that Lenin was on the fringes of the Marxist movement at the time. There are several problems here.
+</p>
+
+<p>
+Firstly, Prof. Chomsky provided no argument that Lenin was in fact a heterodox Marxist, in the first quotation—he merely made the assertion. In the second quotation, Chomsky’s own cited example (the revolutionary potential of the peasantry) proves the opposite: Lenin actually <i>agreed</i> with Marx on this issue (as has been shown already), so by Chomsky’s reasoning, this shows that Lenin was part of the Marxist tradition.
+</p>
+
+<p>
+Secondly, even if the charge turned out to be true, what would be interesting about it? Again, Leninists and Trotskyists purport to promulgate correct revolutionary strategy, not to adhere to some kind of religious dogma. Thirdly, Prof. Chomsky invoked Rosa Luxemburg in particular as an exemplar of orthodox or mainstream Marxism, <i>vis-à-vis</i> the rightwing deviation of Lenin and the Bolsheviks (with their opportunism and their vanguardism). This is a problem, because <i>Luxemburg herself</i> both affirmed vanguardism and rejected as nonsensical the charge that Lenin was heterodox!
+</p>
+
+<p>
+Let us first look at what Luxemburg wrote about vanguardism and the rôle and
+structure of the party: “The social democrats are the most enlightened, most class-
+conscious <b>vanguard</b> of the proletariat.”<sup><a id="fnr.15" class="footref" href="#fn.15" role="doc-backlink">15</a></sup> She goes on:
+</p>
+
+<blockquote>
+<p>
+If the widest proletarian layer should be won for a political mass action of the social democrats, and if, vice versa, <b>the social democrats should seize and maintain the real leadership of a mass movement – should they become, in a political sense, the rulers of the whole movement</b>, then they must, with the utmost clearness, consistency and resoluteness, inform the German proletariat of their tactics and aims in the period of coming struggle.<sup><a id="fnr.16" class="footref" href="#fn.16" role="doc-backlink">16</a></sup>
+</p>
+</blockquote>
+
+<p>
+Although she was critical of Lenin’s views (rightly or wrongly) about the structural
+questions of the party, she explicitly affirmed the basic premise of vanguardism and
+centralism: “Generally speaking it is undeniable that a strong tendency toward
+centralization is inherent in the Social Democratic movement.”<sup><a id="fnr.17" class="footref" href="#fn.17" role="doc-backlink">17</a></sup> She continues:
+</p>
+
+<blockquote>
+<p>
+Therefore, the Social Democracy is, as a rule, hostile to any manifestation of localism or federalism. It strives to unite all workers and all worker organizations in a single party, no matter what national, religious, or occupational differences may exist among them.<sup><a id="fnr.18" class="footref" href="#fn.18" role="doc-backlink">18</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky was thus wrong to counterpose Luxemburg’s views as orthodoxy and Lenin’s vanguardism as deviancy, since Luxemburg advocated an extremely similar concept.
+</p>
+
+<p>
+When it comes to Luxemburg’s views on orthodoxy, opportunism, and the overall character of the Bolsheviks, Prof. Chomsky’s citation of Luxemburg is again problematic. In a 1906 reply to Plekhanov, she wrote:
+</p>
+
+<blockquote>
+<p>
+If today the Bolshevik comrades speak of the dictatorship of the proletariat, <b>they have never given it the old Blanquist meaning; neither have they ever made the mistake of Narodnaya Volya, which dreamt of “taking power for itself” (zachvat vlasti).</b> On the contrary, they have affirmed that the present revolution will succeed when the proletariat—all the revolutionary class—takes possession of the state machine.<sup><a id="fnr.19" class="footref" href="#fn.19" role="doc-backlink">19</a></sup>
+</p>
+</blockquote>
+
+<p>
+Near the end of the same article, she says: “It is high time to finish with such scholasticism and all this hullabaloo to identify who is a ‘Blanquist’ and who is an ‘orthodox Marxist’.”<sup><a id="fnr.20" class="footref" href="#fn.20" role="doc-backlink">20</a></sup> It is thus clear that Luxemburg not only rejected the charge of opportunism against the Bolsheviks, she even rejected the practice of labelling movements “orthodox Marxist” at all! Nowhere in her writings can one find the charge of opportunism or a rightwing deviation against the Bolsheviks. Indeed, in her earlier work (‘Organizational Questions of the Russian Social Democracy’, 1904), she was very critical of Lenin and addressed the subject of opportunism at length—but not once was the charge directed against Lenin.
+</p>
+
+<p>
+Her work on the Russian Revolution, written in 1918, was her final dedicated analysis of the Bolshevik Party and its policies (with the exception of a very small article reiterating the same ideas). Therefore, this work, for obvious reasons, will provide the most conclusive understanding of Luxemburg’s views about the party of Lenin and Trotsky. She writes about these two leaders:
+</p>
+
+<blockquote>
+<p>
+<b>There is no doubt either that the wise heads at the helm of the Russian Revolution, that Lenin and Trotsky</b> on their thorny path beset by traps of all kinds, have taken many a decisive step only with the greatest inner hesitation and with the most violent inner opposition.<sup><a id="fnr.21" class="footref" href="#fn.21" role="doc-backlink">21</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+<b>The party of Lenin was thus the only one in Russia which grasped the true interest of the revolution in that first period.</b> It was the element that drove the revolution forward, and, thus it was the only party which really carried on a socialist policy.<sup><a id="fnr.22" class="footref" href="#fn.22" role="doc-backlink">22</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+<b>The party of Lenin was the only one which grasped the mandate and duty of a truly revolutionary party</b> and which, by the slogan – “All power in the hands of the proletariat and peasantry” – insured the continued development of the revolution.<sup><a id="fnr.23" class="footref" href="#fn.23" role="doc-backlink">23</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+<b>The determination with which, at the decisive moment, Lenin and his comrades offered the only solution which could advance things</b> (“all power in the hands of the proletariat and peasantry”), transformed them almost overnight from a persecuted, slandered, outlawed minority whose leader had to hid like Marat in cellars, into the absolute master of the situation.<sup><a id="fnr.24" class="footref" href="#fn.24" role="doc-backlink">24</a></sup>
+</p>
+</blockquote>
+
+<p>
+Her work concludes:
+</p>
+
+<blockquote>
+<p>
+This is the essential and <i>enduring</i> in Bolshevik policy. In this sense theirs is the immortal historical service of having marched at the head of the international proletariat with the conquest of political power and the practical placing of the problem of the realization of socialism, and of having advanced mightily the settlement of the score between capital and labor in the entire world.<sup><a id="fnr.25" class="footref" href="#fn.25" role="doc-backlink">25</a></sup>
+</p>
+</blockquote>
+
+<p>
+Finally, it is worth noting that the conception of the communist party held by Karl Kautsky, the so-called “Pope of Marxism” and one of the Marxist figures most opposed to Lenin, greatly resembles vanguardism:
+</p>
+
+<blockquote>
+<p>
+When such a situation has arisen, when a stage has been reached where internal conflicts threaten a collapse, and if there is within such a nation a class that is interested in attaining, and has the power to take political power, then the only thing that is needed is <b>a party that possesses the confidence of this class</b>, and which stands in irreconcilable antagonism to the tottering regime, and which clearly recognizes the existing situation, <b>in order to lead the aspiring class to victory</b>.<sup><a id="fnr.26" class="footref" href="#fn.26" role="doc-backlink">26</a></sup>
+</p>
+</blockquote>
+
+<p>
+Finally, let us look at what Marx and Engels wrote on the rôle of the communist party:
+</p>
+
+<blockquote>
+<p>
+<b>The communists, therefore, are on the one hand, practically, the most advanced and resolute section of the working class parties of every country,</b> that section which pushes forward all others; on the other hand, theoretically, <b>they have over the great mass of the proletariat the advantage of clearly understanding the line of march, the conditions, and the ultimate general results of the proletarian movement</b>.
+</p>
+
+<p>
+The immediate aim of the communists is the same as that of all the other proletarian parties: formation of the proletariat into a class, overthrow of the bourgeois supremacy, conquest of political power by the proletariat.<sup><a id="fnr.27" class="footref" href="#fn.27" role="doc-backlink">27</a></sup>
+</p>
+</blockquote>
+
+<p>
+Two things are now clear. Firstly, the concept of a centralised party, comprising the most advanced section of the working class, leading the whole of the working class in its political struggle, is very much a part of Marxist orthodoxy or mainstream Marxism. Secondly, we know that Luxemburg, despite some disagreements about the specifics of party structure and policies, viewed the Bolsheviks as the greatest of socialists, and by no means opportunistic or heterodox. In other words, Prof. Chomsky’s own cited exemplar of Marxist orthodoxy proves that Lenin and the Bolsheviks were likewise orthodox, since they shared the same fundamental views and approved of each other.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda642ec" class="outline-2">
+<h2 id="orgda642ec">Lenin’s libertarian opportunism</h2>
+<div class="outline-text-2" id="text-orgda642ec">
+<p>
+According to Prof. Chomsky, Lenin had a libertarian-socialist phase, which was
+opportunistic:
+</p>
+
+<blockquote>
+<p>
+When Lenin came back to Russia in April 1917, he took a different line—quite a different line than the one he’d had in the past. If you take a look at Lenin’s work, it shifted character in April '17. In April 1917 it became kind of libertarian—that’s when he came out with The April Theses, and that’s when he wrote State and Revolution (it came out a year later, but that’s when it was written). These were basically libertarian works. They were very much more in the mainstream of left/libertarian socialism, from this range that goes from anarchism over to left Marxism of the Pannekoek/Luxemburg variety. And he talks about Soviets and the need for a workers’ organization and so on—in fact, he came closer to what the essence of socialism was always understood to be. After all, the core of socialism was understood to be workers’ control over production. That was the core—it’s where you begin, then you go on to other things, but the beginning is control by the workers over production. That’s where it begins. Then Lenin took power in October 1917, in what’s called a revolution (but in my view ought to be called a coup), and things followed that coup (or revolution, if you want to call it that). One of the things that followed it was the immediate moves to destroy the soviets and the factory councils. Those were some of the first moves of Lenin and Trotsky— Trotsky joined at that point—after they took state power. If you look at what Lenin wrote after that period, or did, you’ll find it’s a reversion to the earlier position. This sort of left deviation is that—a deviation. You could ask why— in my view, it was just opportunistic. He knew that in order to gain power, he was going to have to go along with the popular currents that were developing, which were in fact spontaneous and libertarian and socialist, as most popular movements have been in fact since the 17th Century. And, being an astute politician (which he was), he sort of went along with that, and talked the line that the people wanted to hear. It’s just like when an American politician goes somewhere and his pollsters tell him, “Say so-and-so,” and he says it—it doesn’t mean that he believes it, and I think Lenin was doing the same thing, without polls. In any event, whatever your interpretation is, when he took power, he reverted to the former Vanguardism&#x2026;<sup><a id="fnr.28" class="footref" href="#fn.28" role="doc-backlink">28</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+Leninism was in my view counterrevolutionary. It wasn’t instituting communism. There was a popular revolution, in fact there had been for years, through 1917 it grew very substantially from February on. Lenin basically tried to take control of it. <b>If you take a look at his writings in 1917 they went way to the left. April Thesis, State and Revolution the most radical things he ever wrote, almost anarchist</b>. My view is that it was basically opportunism. I don’t think he believes a word of it. It seems to me that he was trying to associate himself, become the leader of the revolutionary popular forces.<sup><a id="fnr.29" class="footref" href="#fn.29" role="doc-backlink">29</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky’s citations do not support his contention that (1) Lenin had a libertarian or near-anarchist phase (2) which was opportunistic, however. In the first case, State and Revolution is clearly not a libertarian-socialist work, nor a work beyond the bounds of mainstream Marxism (or at least, Marx and Engels), as can be seen in the following examples:
+</p>
+
+<p>
+<blockquote>
+<figure>
+<blockquote style="margin-bottom: 0;">
+<p style="margin-bottom: 0;">
+“the class struggle necessarily leads to the dictatorship of the proletariat”.<sup><a id="fnr.30" class="footref" href="#fn.30" role="doc-backlink">30</a></sup>
+</p>
+</blockquote>
+<figcaption style="text-align: right; margin-bottom: 24px;">—<bold>Lenin quoting Marx</bold></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+<blockquote style="margin-bottom: 0;">
+<p style="margin-bottom: 0;">
+“If the political struggle of the working class assumes revolutionary form,” wrote Marx, ridiculing the anarchists for their repudiation of politics, “and if the workers set up their revolutionary dictatorship in place of the dictatorship of the bourgeoisie, they commit the terrible crime of violating principles, for in order to satisfy their wretched, vulgar everyday needs and to crush the resistance of the bourgeoisie, they give the state a revolutionary and transient form, instead of laying down their arms and abolishing the state.”<sup><a id="fnr.31" class="footref" href="#fn.31" role="doc-backlink">31</a></sup>
+</p>
+</blockquote>
+<figcaption style="text-align: right; margin-bottom: 24px;">—<bold>Lenin quoting Marx and Engels</bold></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+<blockquote style="margin-bottom: 0;">
+<p style="margin-bottom: 0;">
+“the “special coercive force” for the suppression of the proletariat by the bourgeoisie, of millions of working people by handfuls of the rich, must be replaced by a “special coercive force” for the suppression of the bourgeoisie by the proletariat (the dictatorship of the proletariat)”. <sup><a id="fnr.32" class="footref" href="#fn.32" role="doc-backlink">32</a></sup>
+</p>
+</blockquote>
+<figcaption style="text-align: right; margin-bottom: 24px;">—<bold>Lenin citing Engels</bold></figcaption>
+</figure>
+</p>
+
+<p>
+<figure>
+<blockquote style="margin-bottom: 0;">
+<p style="margin-bottom: 0;">
+“The theory of class struggle, applied by Marx to the question of the state and the socialist revolution, leads as a matter of course to the recognition of the &lt;italic&gt;political rule&lt;/italic&gt; of the proletariat, of its dictatorship, i.e., of undivided power directly backed by the armed force of the people. The overthrow of the bourgeoisie can be achieved only by the proletariat becoming the ruling class, capable of crushing the inevitable and desperate resistance of the bourgeoisie, and of organising all the working and exploited people for the new economic system.”<sup><a id="fnr.33" class="footref" href="#fn.33" role="doc-backlink">33</a></sup>
+</p>
+</blockquote>
+<figcaption style="text-align: right; margin-bottom: 24px;">—<bold>Lenin</bold></figcaption>
+</figure>
+</p>
+
+
+<p>
+<figure>
+<blockquote style="margin-bottom: 0;">
+<p style="margin-bottom: 0;">
+“The proletariat needs state power, a centralised organisation of force, an organisation of violence, both to crush the resistance of the exploiters and to lead the enormous mass of the population—the peasants, the petty bourgeoisie, and semi-proletarians—in the work of organising a socialist economy.”<sup><a id="fnr.34" class="footref" href="#fn.34" role="doc-backlink">34</a></sup>
+</p>
+</blockquote>
+<figcaption style="text-align: right; margin-bottom: 24px;">—<bold>Lenin</bold></figcaption>
+</figure>
+</blockquote>
+</p>
+
+<p>
+In short, Lenin—following Marx and Engels—argued that the coercive power of the state (referred to as “dictatorship”) should be seized by workers and used to enforce and protect their interests. It is hard to see how this constitutes a libertarian-socialist approach, or a deviation from Lenin’s usual line, or a deviation from Marx and Engels.
+</p>
+
+<p>
+Prof. Chomsky also cites The April Theses to demonstrate Lenin’s opportunistic zigzagging—again, wrongly. The April Theses was written to briefly summarise the views and policies of the Bolsheviks regarding the situation facing them in April of 1917, namely: (1) the need for a Russian withdrawal from WW1; (2) the favourability of conditions for revolution; (3) the reactionary character of the Provisional Government; (4) the minority position of the Bolsheviks at that time, and consequently, their need to win over the masses; (5) the need to establish a Republic of Soviets (rather than a parliamentary republic) in which officials are elective, accountable, and low-paid, with the ultimate goal of abolishing the police, the army, and the bureaucracy; (6) the need for agrarian reform and land-nationalisation; (7) the need for centralised and nationalised banking; (8) the priority of nationalisation over an immediate introduction of socialism; (9) a short itinerary of party tasks; and finally, (10) the need to establish a new socialist International. All of this is consistent with the so-called “authoritarian” (as opposed to “libertarian”) approach to proletarian empowerment and socialism: having low-paid, recallable, elected officials is not a libertarian-specific position, nor is the nationalisation of the means of production, nor centralised banking, etc. The evidence is thus equivocal at best, and Prof. Chomsky’s interpretation of this as a libertarian zigzag (let alone an opportunistic one) remains unsubstantiated.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcfc2446" class="outline-2">
+<h2 id="orgcfc2446">Vanguardism = exploitative intelligentsia</h2>
+<div class="outline-text-2" id="text-orgcfc2446">
+<p>
+According to Prof. Chomsky, vanguardism is the theory of the radical intelligentsia exploiting popular movements to seize power and forcibly reshape society according to their whims:
+</p>
+
+<blockquote>
+<p>
+Lenin was a rightwing deviation of the socialist movement, and he was so regarded by the mainstream Marxists. We’ve forgotten who the mainstream Marxists were because they lost, and you only remember the guys who won, but if you go back to that period, the mainstream Marxists were people like, for example, Anton Pannekoek, who was head of education for the Marxist movement; he’s one of the people who Lenin later denounced as an infantile leftist, but he was one of the leading intellectuals of the actual Marxist movement. Rosa Luxemburg was another mainstream Marxist and there were others—in fact, Trotsky was one up until 1917. They were all very critical of Leninism because of what they regarded as this opportunistic vanguardism, the idea that the radical intelligentsia were going to exploit popular movements to seize state power and then to use that state power to whip the population into the society that they chose. Now, that was quite inconsistent with Marxism as understood by the mainstream—I’d say ‘left’— Marxists. From this point of view, Bolshevism was a rightwing deviation. Trotsky made the same points up till 1917.<sup><a id="fnr.35" class="footref" href="#fn.35" role="doc-backlink">35</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky’s description of vanguardism resembles the popular and inaccurate stereotype of opportunistic armchair intellectuals who exploit the working class for personal gain and power.<sup><a id="fnr.36" class="footref" href="#fn.36" role="doc-backlink">36</a></sup> By contrast, vanguardism is simply the coordination of a workers’ mass-movement by a professional (dedicated, educated, democratically- elected, Marxist) revolutionary workers’ party or leadership.<sup><a id="fnr.37" class="footref" href="#fn.37" role="doc-backlink">37</a></sup> Indeed, Lenin explicitly called for the marginalisation of intellectuals and other such middle-class elements within the Bolshevik Party, and concomitantly, the maximalisation of the rôle of workers. For example, Lenin stated the following in 1905:
+</p>
+
+
+<blockquote>
+<p>
+To place workers on the committees is a political, not only a pedagogical, task. Workers have the class instinct, and, given some political experience, they pretty soon become staunch Social-Democrats. I should be strongly in favour of having eight workers to every two intellectuals on our committees. Should the advice given in our Party literature&#x2014;to place as many workers as possible on the committees&#x2014;be insufficient, it would be advisable for this recommendation to be given in the name of the Congress.<sup><a id="fnr.38" class="footref" href="#fn.38" role="doc-backlink">38</a></sup>
+</p>
+</blockquote>
+
+<p>
+Half a year later, Lenin celebrated the success of this process of middle-class intellectual marginalisation, and called for its continuation:
+</p>
+
+<blockquote>
+<p>
+At the Third Congress of the Party I suggested that there be about eight workers to every two intellectuals in the Party committees. How obsolete that suggestion seems today! Now we must wish for the new Party organisations to have one Social-Democratic intellectual to several hundred Social-Democratic workers.<sup><a id="fnr.39" class="footref" href="#fn.39" role="doc-backlink">39</a></sup>
+</p>
+</blockquote>
+
+<p>
+Later still, in 1908, Lenin reiterated in some personal correspondence:
+</p>
+
+<blockquote>
+<p>
+The significance of the intellectuals in our Party is declining; news comes from all sides that the intelligentsia is <i>fleeing</i> the Party. And a good riddance to these scoundrels. The Party is purging itself from petty-bourgeois dross. The workers are having a bigger say in things. The role of the worker-professionals is increasing.<sup><a id="fnr.40" class="footref" href="#fn.40" role="doc-backlink">40</a></sup>
+</p>
+</blockquote>
+
+<p>
+Finally, in 1920 (after the revolution), Lenin continued to advocate the ejection of the middle class (i.e., including the intelligentsia) from communist parties; on his view, such parties ought to remain proletarian organisations:
+</p>
+
+<blockquote>
+<p>
+Communist parties in countries where Communists can conduct their work legally must carry out periodic membership purges (re-registrations) with the aim of systematically ridding the party of petty-bourgeois elements that inevitably percolate into them.<sup><a id="fnr.41" class="footref" href="#fn.41" role="doc-backlink">41</a></sup>
+</p>
+</blockquote>
+
+<p>
+All of this runs counter to Prof. Chomsky's characterisation of vanguardism. More importantly, Prof. Chomsky offers no counter-argument against the efficacy of vanguardism, which seems like a <i>logical</i> or <i>logistical</i> issue: a revolutionary movement coordinated by a central leadership just seems more likely to succeed over a leaderless or decentralised one, especially in the face of a hostile (centralised, militarised, industrialised) state.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge57d146" class="outline-2">
+<h2 id="orge57d146">The October Revolution was a coup</h2>
+<div class="outline-text-2" id="text-orge57d146">
+<p>
+According to Prof. Chomsky, the October Revolution was actually a <i>coup
+d'état</i>:
+</p>
+
+<blockquote>
+<p>
+Then Lenin took power in October 1917, in what's called a revolution (<b>but in my view ought to be called a coup</b>), and things followed that coup (or revolution, if you want to call it that).<sup><a id="fnr.42" class="footref" href="#fn.42" role="doc-backlink">42</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+The Bolshevik Revolution, so-called ‘revolution' (<b>it was really a coup</b>), was really a counter-revolution&#x2026;<sup><a id="fnr.43" class="footref" href="#fn.43" role="doc-backlink">43</a></sup>
+</p>
+</blockquote>
+
+<p>
+Usually, a political revolution is understood to mean a seizure of state power by a mass movement, or a seizure supported by a mass movement, whilst a <i>coup d'état</i> is understood to mean a seizure of state power by a small group (especially a faction of the military). If Prof. Chomsky has in mind such a distinction, then he is mistaken. Both key primary sources (such as the testimony of the British ambassador Robert Lockhart) and a recent wave of scholarship in the Western academy (especially the work of Alexander Rabinowitch) support the thesis that Lenin, the Bolsheviks, their proposed policies, and their seizure of power in November of 1917 had popular support from the Russian masses.<sup><a id="fnr.44" class="footref" href="#fn.44" role="doc-backlink">44</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0299a7f" class="outline-2">
+<h2 id="org0299a7f">The Bolsheviks vs. the Constituent Assembly</h2>
+<div class="outline-text-2" id="text-org0299a7f">
+<p>
+According to Prof. Chomsky, the Bolsheviks dissolved the Constituent Assembly because they feared that they would lose a fair and open democratic election:
+</p>
+
+<blockquote>
+<p>
+The Bolshevik Revolution, so-called ‘revolution' (it was really a coup), was really a counter-revolution, which placed state-power in the hands of a highly authoritarian, anti-socialist group, which within a couple of months had destroyed the factory councils, had destroyed the soviets, <b>had dismissed the Constituent Assembly (because they knew they were going to lose)</b>&#x2026;<sup><a id="fnr.45" class="footref" href="#fn.45" role="doc-backlink">45</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+As Lenin took power, among his first acts, along with Trotsky, was to destroy the socialist institutions that had arisen in the pre-Bolshevik period: soviets, factory councils, <b>the Constituent Assembly (which was dominated by Left-Social-Revolutionaries, largely peasant-based)</b>.<sup><a id="fnr.46" class="footref" href="#fn.46" role="doc-backlink">46</a></sup>
+</p>
+</blockquote>
+
+<p>
+The Bolsheviks were already in power before the results came in, and went along with the election anyway. If they had feared a loss, they would have dissolved it before rather than after the election. Lenin viewed participation in the election as useful, and carefully analysed the resulting data:
+</p>
+
+<blockquote>
+<p>
+Nevertheless, the Bolsheviks did <i>not</i> boycott the Constituent Assembly, but took part in the elections both before and <i>after</i> the proletariat conquered political power. That these elections yielded exceedingly valuable (and to the proletariat, highly useful) political results has, I make bold to hope, been proved by me in the above-mentioned article, which analyses in detail the returns of the elections to the Constituent Assembly in Russia.<sup><a id="fnr.47" class="footref" href="#fn.47" role="doc-backlink">47</a></sup>
+</p>
+</blockquote>
+
+<p>
+This is reiterated by Oliver Radkey, one of the leading historians on the Russian Constituent Assembly:
+</p>
+
+<blockquote>
+<p>
+Naturally, Lenin's interpretation was his own and differs markedly from that of Sviatitski, but his point of view was by no means as biased as one might expect, for he conscientiously sought in the figures the lessons they contained for his party, whether flattering or otherwise, and his deductions constitute a thoroughgoing and penetrating analysis of the results.<sup><a id="fnr.48" class="footref" href="#fn.48" role="doc-backlink">48</a></sup>
+</p>
+</blockquote>
+
+<p>
+The results of the election were actually somewhat surprising to the Bolsheviks, meaning that they couldn't have dissolved the Assembly with that consideration in mind and even thought that they would win as a result of their coalition with the Left-SRs. As Radkey notes:
+</p>
+
+<blockquote>
+<p>
+The best evidence of the basic soundness of the returns is afforded by the controversy that arose in the capital between the Council of People's Commissars and the All-Russian Electoral Commission. Apparently the Bolsheviks, or at least some of their leaders, expected to come out ahead with the help of the Left SRs until they saw the handwriting on the wall as returns from the black-earth zone began pouring in during the second week of the balloting.<sup><a id="fnr.49" class="footref" href="#fn.49" role="doc-backlink">49</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky could of course revise his claim to say that the Bolsheviks dissolved the Constituent Assembly precisely <i>because</i> they lost, but this is also inconsistent with the available evidence: despite no prediction of losing and even a prediction of winning, the Bolsheviks had never considered the Constituent Assembly more legitimate than soviet power to begin with.<sup><a id="fnr.50" class="footref" href="#fn.50" role="doc-backlink">50</a></sup> For months they had been chanting the slogan, “All power to the soviets”.<sup><a id="fnr.51" class="footref" href="#fn.51" role="doc-backlink">51</a></sup> They would never view the Constituent Assembly as (ultimately) legitimate, since it included liberal elements such as the Kadets and the Right-SRs (the latter of whom predominated therein); they had been criticising the Mensheviks for months for having entered into government with such groups.
+</p>
+
+<p>
+In short, the dissolution of the Assembly was not predicated upon a predictable or surprising loss for the Bolsheviks. A quote of Lenin, months before the convocation of the Assembly and October Revolution demonstrates this position to have been consistent:
+</p>
+
+<blockquote>
+<p>
+And that fact reveals the utter futility of constitutional illusions. <b>Unless a new revolution takes place in Russia, unless the power of the counter-*revolutionary bourgeoisie (primarily the Cadets) is overthrown</b>, and unless the people withdraw their trust from the Socialist-Revolutionary and Menshevik parties, parties compromising with the bourgeoisie, <b>the Constituent Assembly will either never meet, or else will be just a “Frankfurt talking shop”, an impotent and worthless assembly</b> of petty bourgeois people frightened to death by the war and the prospect of the bourgeoisie “boycotting the government”, and helplessly torn between frantic efforts to rule
+without the bourgeoisie and the fear of getting along without them.
+</p>
+
+<p>
+The Constituent Assembly issue is <i>subordinate</i> to that of the course and outcome of the class struggle between the bourgeoisie and the proletariat.<sup><a id="fnr.52" class="footref" href="#fn.52" role="doc-backlink">52</a></sup>
+</p>
+</blockquote>
+
+<p>
+As to Prof. Chomsky's side-claim that the Constituent Assembly was dominated by the peasant-based Left-SRs, this is untrue. The assembly was dominated by the PSR (often referred to as the Right SRs). The Left-SRs had 40 deputies, whilst the PSR had the most deputies at 370.<sup><a id="fnr.53" class="footref" href="#fn.53" role="doc-backlink">53</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org18836a5" class="outline-2">
+<h2 id="org18836a5">The Bolsheviks vs. workers' democracy</h2>
+<div class="outline-text-2" id="text-org18836a5">
+<p>
+According to Prof. Chomsky, the Bolsheviks destroyed the soviets and factory councils&#x2014;the organs of workers' democracy&#x2014;soon after the October Revolution:
+</p>
+
+<blockquote>
+<p>
+Then Lenin took power in October 1917, in what's called a revolution (but in my view ought to be called a coup), and things followed that coup (or revolution, if you want to call it that). One of the things that followed it was the <b>immediate moves to destroy the soviets and the factory councils</b>. Those were some of the first moves of Lenin and Trotsky&#x2014;Trotsky joined at that point&#x2014;after they took state power.<sup><a id="fnr.54" class="footref" href="#fn.54" role="doc-backlink">54</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+The Bolshevik Revolution, so-called ‘revolution' (it was really a coup), was really a counter-revolution, which placed state-power in the hands of a highly authoritarian, anti-socialist group, which <b>within a couple of months had destroyed the factory councils, had destroyed the soviets</b>&#x2026;<sup><a id="fnr.55" class="footref" href="#fn.55" role="doc-backlink">55</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+When he [i.e., Lenin] took power, <b>he reverted to the former Vanguardism and moved at once to eliminate the organs of workers' control</b>. Now, that meant he was moving to destroy socialism, if socialism has as its core workers' control over production. <b>The soviets and the factory councils were instruments of workers control</b>; and you could say they were defective instruments, they had to be worked out better and so on, yeah, no doubt, but they were the instruments that had been developed in the course of popular struggle to implement basically workers control, and <b>those were the first things to go</b>. By early 1918 (this is still really before the civil war set in)&#x2026;<sup><a id="fnr.56" class="footref" href="#fn.56" role="doc-backlink">56</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+As Lenin took power, <b>among his first acts, along with Trotsky, was to destroy the socialist institutions that had arisen in the pre-Bolshevik period: soviets, factory councils</b>, the Constituent Assembly (which was dominated by Left-Social-Revolutionaries, largely
+peasant-based).<sup><a id="fnr.57" class="footref" href="#fn.57" role="doc-backlink">57</a></sup>
+</p>
+</blockquote>
+
+<p>
+Additionally, in writing:
+</p>
+
+<blockquote>
+<p>
+The Leninist antagonism to the most essential features of socialism was evident from the very start. <b>In revolutionary Russia, Soviets and factory committees developed as instruments of struggle and liberation, with many flaws, but with a rich potential.Lenin and Trotsky, upon assuming power, immediately devoted themselves to destroying the liberatory potential of these instruments</b>, establishing the rule of the Party, in practice its Central Committee and its Maximal Leaders &#x2014; exactly as Trotsky had predicted years earlier, as Rosa Luxembourg and other left Marxists warned at the time, and as the anarchists had always understood.<sup><a id="fnr.58" class="footref" href="#fn.58" role="doc-backlink">58</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+But the State priests knew better, <b>and moved at once to destroy the factory committees and to reduce the Soviets to organs of their rule</b>. On November 3, Lenin announced in a “Draft Decree on Workers' Control” that delegates elected to exercise such control were to be “answerable to the State for the maintenance of the strictest order and discipline and for the protection of property.” As the year ended, Lenin noted that “we passed from workers' control to the creation of the Supreme Council of National Economy,” which was to “replace, absorb and supersede the machinery of workers' control”.<sup><a id="fnr.59" class="footref" href="#fn.59" role="doc-backlink">59</a></sup>
+</p>
+</blockquote>
+
+<p>
+And finally:
+</p>
+
+<blockquote>
+<p>
+When he became the leader, he didn't waste much time, and Trotsky helped him, in instituting a pretty repressive regime with the basic elements of Stalinism. <b>They moved pretty quickly to dismantle most of the organs of popular power. Not over night, but over a short time they were able to basically dismantle the soviets, the factory councils</b>, to convert the labor force into a labor army.<sup><a id="fnr.60" class="footref" href="#fn.60" role="doc-backlink">60</a></sup>
+</p>
+</blockquote>
+
+<p>
+Most of Prof. Chomsky's references to the Bolshevik ‘destruction' of the soviets and the factory councils are vague, but in the second-last quotation he clarifies that he has in mind a specific document and a specific organisation produced and established by Lenin and the Bolsheviks soon after the revolution: the ‘Draft Regulations On Workers' Control' (from the 8th or 9th of November), regarding factory councils, and the establishment of the Supreme Council of National Economy, regarding soviets. In the first place, Prof. Chomsky has it backwards&#x2014;the ‘Draft Regulations on Workers' Control' sought to /expand/workers' control over workplaces, rather than destroying the factory councils:
+</p>
+
+<blockquote>
+<ol class="org-ol">
+<li><i>Workers' control</i> over the production, storage, purchase and sale of all products and raw materials shall be introduced in all industrial, commercial, banking, agricultural and other enterprises employing not less than five workers and office employees (together), or with an annual turnover of not less than 10,000 rubles.</li>
+
+<li>Workers' control shall be exercised by all the workers and office employees of an enterprise, either directly, if the enterprise is small enough to permit it, or through their elected representatives, who shall be elected <i>immediately</i> at general meetings, at which minutes of the elections shall be taken and the names of those elected communicated to the government and to the local Soviets of Workers', Soldiers' and Peasants' Deputies.<sup><a id="fnr.61" class="footref" href="#fn.61" role="doc-backlink">61</a></sup></li>
+</ol>
+</blockquote>
+
+<p>
+Prof. Chomsky (or rather, Maurice Brinton, upon whom he relies)<sup><a id="fnr.62" class="footref" href="#fn.62" role="doc-backlink">62</a></sup> focuses on the provision that the delegates elected by factory councils were “answerable to the State for the maintenance of the strictest order and discipline and for the protection of property,” which is interpreted by Prof. Chomsky as the imposition of unelected state tyranny upon workers' democracy. Let us examine the passage in full context:
+</p>
+
+<blockquote>
+<ol class="org-ol">
+<li>In all enterprises of state importance all owners and all representatives of the workers and office employees elected for the purpose of exercising workers' control shall be answerable to the state for the maintenance of the strictest order and discipline and for the protection of property. Persons guilty of dereliction of duty, concealment of stocks, accounts, etc., shall be punished by the confiscation of the whole of their property and by imprisonment for a term of up to five years.</li>
+
+<li>By enterprises of state importance are meant all enterprises working for defence, or in any way connected with the manufacture of articles necessary for the existence of the masses of the population.<sup><a id="fnr.63" class="footref" href="#fn.63" role="doc-backlink">63</a></sup></li>
+</ol>
+</blockquote>
+
+<p>
+The first thing to note here is that the state is regulating both factory council representatives <i>and</i> private owners&#x2014;workers' control was expanding, but the big bourgeoisie still retained ownership over the industrial means of production at this stage, contrary to Prof. Chomsky's characterisations of the factory councils as socialist. Secondly, the only factory-council representatives (and private owners) being regulated by the state were those in “enterprises of state importance”, i.e., those necessary for military defence and basic needs. Thirdly, the state was not stepping in and taking over the running of factory councils in general or otherwise ‘destroying' these organs of workers' control (as Prof. Chomsky seems to suggest), but rather, regulating them in a specific aspect&#x2014;merely ensuring the accountability of representatives and private owners for “dereliction of duty, concealment of stocks, accounts, etc.,” for which the guilty would be punished with property-confiscation and imprisonment. This is not state control over factory councils, or the reduction of factory councils to a sham&#x2014;it is merely the state stepping in when the elected officials or the private owners undermine production. What exactly is the alternative supposed to be: profiteers and economic saboteurs go free? The workers comprising the factory council form a howling mob to murder them in cold blood? Every individual factory council in 1917 Petrograd forms their own laws, courts, and jails? More importantly, it doesn't follow merely from the state regulating profiteering and parasitism in production&#x2014;regulating elected officials and private owners in this specific regard&#x2014;that the factory councils were destroyed or rendered ineffective. Prof. Chomsky would actually have to argue that the workers' and peasants' state <i>in general</i>&#x2014;the overarching body regulating this aspect of the factory councils&#x2014;was undemocratic, regardless of the regulation of the factory councils, which is precisely the point that he is trying to establish with his appeal to the factory councils in the first place. Prof. Chomsky's point thus remains unsubstantiated.
+</p>
+
+<p>
+Prof. Chomsky also refers (via Brinton) to Lenin stating, at the end of 1917, that “we passed from workers' control to the creation of the Supreme Council of National Economy” to “replace, absorb and supersede the machinery of workers' control”. The Supreme Council of National Economy was established on the 1st [i.e., 14th] of December, 1917, “to organize the national economy and state finances.”<sup><a id="fnr.64" class="footref" href="#fn.64" role="doc-backlink">64</a></sup> In particular, Prof. Chomsky seems to be criticising the following powers of this body:
+</p>
+
+<blockquote>
+<ol class="org-ol">
+<li>The Supreme Council of National Economy has the right to confiscate, requisition, sequester, and consolidate various branches of industry, commerce, and other enterprises in the field of production, distribution, and state finance.”</li>
+<li>The Supreme Council of National Economy is to take charge of all existing institutions for the regulation of the economic life and has the right to reorganize them.</li>
+
+<li>The Supreme Council of National Economy co-ordinates and directs the activities of the local economic departments of the Soviets of Workers', Soldiers', and Peasants' Deputies, including the local organs of Workers' Control, as well as local agencies of the Commissariats of Labor, Trades and Industry, Food, etc.</li>
+</ol>
+
+<p>
+In the absence of local agencies referred to above, the Supreme
+Council of National Economy organizes those of its own.
+</p>
+
+<p>
+All the rulings of the Supreme Council of National Economy are binding
+on the economic departments of the local Soviets as the agents of the
+Supreme Council of National Economy.<sup><a id="fnr.65" class="footref" href="#fn.65" role="doc-backlink">65</a></sup>
+</p>
+</blockquote>
+
+<p>
+<i>Pace</i> Prof. Chomsky, this was not an abolition of the soviets or their power&#x2014;it was just one component of a workers' and peasants' state regulating other aspects of itself. It doesn't follow from this that workers' democracy was abolished. Again, Prof. Chomsky would actually have to argue that the workers' and peasants' state <i>in general</i> was undemocratic, regardless of the regulation of the soviets or factory councils&#x2014;again, his point remains unsubstantiated. And, if Prof. Chomsky had such an argument (that the workers' and peasants' state in general was undemocratic), then the present argument (regarding the regulation of the soviets or the factory councils by said state) would be superfluous.
+</p>
+
+<p>
+In fact, the Supreme Council of National Economy comprised (1) representatives of the All-Russian Soviet of Workers' Control, (2) Commissariats, and (3) occasional expert advisers.<sup><a id="fnr.66" class="footref" href="#fn.66" role="doc-backlink">66</a></sup> In turn, the All-Russian Soviet of Workers' Control comprised representatives from numerous bodies, such as the All-Russian Council of Trade Unions.<sup><a id="fnr.67" class="footref" href="#fn.67" role="doc-backlink">67</a></sup> Meanwhile, the Commissariats were members of the Soviet of Peoples' Commissars, which was created by the second All-Russian Congress of Workers' and Soldiers' Soviet Deputies, which in turn comprised delegates elected by the soviets.<sup><a id="fnr.68" class="footref" href="#fn.68" role="doc-backlink">68</a></sup> In short, the soviets were regulated by a body that was ultimately elected by the soviets themselves and by other democratically-elected bodies in the workers' and peasants' state. Rather than workers' control passing over to unaccountable tyranny (as Prof. Chomsky would have it), individual or decentralised factory-by-factory or soviet-by-soviet workers' control in the economic domain passed over to the more centralised coordination of the workers' and peasants' government.
+</p>
+
+<p>
+That said, it is true that workers' democracy was constricted during the Russian Civil War, when the workers' state was fighting for survival and had to enforce stricter control over society and the economy. At the end of the war, however, this control was loosened, and Lenin called for greater administrative and economic participation of the trade unions:
+</p>
+
+<blockquote>
+<p>
+Proceeding from these principles, the trade unions' part in the activities connected with the business and administrative organisations of the proletarian state should take the following main forms:
+</p>
+
+<p>
+(1) The trade unions should help staff all the business and administrative bodies connected with economics by nominating their candidates for them and casting a consultative vote; the trade unions take part in these bodies too, not directly, but through the members of the higher state bodies, the members of business boards, members of the factory managements (where collegiate management is practised), managers, their assistants, etc., nominated by them and endorsed by the Communist Party and the Soviet government.
+</p>
+
+<p>
+(2) One of the most important functions of the trade unions is to promote and train factory managers from among the workers and the masses of the working people generally. At the present time we have scores of such factory managers who are quite satisfactory, and hundreds who are more or less satisfactory, but very soon, however, we must have hundreds of the former and thousands of the latter. The trade unions must much more carefully and persistently than hitherto keep a systematic register of all workers and peasants capable of holding posts of this kind, and thoroughly, efficiently and from every aspect verify the progress they make in learning the art of management.
+</p>
+
+<p>
+(3) No less important is the participation of the trade unions in all the planning bodies of the proletarian state. In addition to participating in all cultural and educational activities and in production propaganda, the trade unions must also, on an increasing scale, enlist the working class and the masses of the working people generally for all branches of the work of building up the state economy; they must make them familiar with all aspects of economic life and with all details of industrial operations&#x2014;from the procurement of raw materials to the marketing of the product; give them a more and more concrete understanding of the single state plan of socialist economy and the worker's and peasant's practical interest in its implementation.<sup><a id="fnr.69" class="footref" href="#fn.69" role="doc-backlink">69</a></sup>
+</p>
+</blockquote>
+
+<p>
+Indeed, statistics on various regional economic councils and factories from December of 1920 show that workers (as opposed to specialists and office-workers) were the majority therein: 57.2% in the Presidium of Supreme Economic Council and gubernia economic councils, 51.4% in the collegiums of chief administrations, departments, central boards and head offices, and 63.5% in the corporate and one-man management of factories.<sup><a id="fnr.70" class="footref" href="#fn.70" role="doc-backlink">70</a></sup> As Lenin put it: “It will be seen that 61.6 per cent, that is, closer to two thirds than to one-half, of the staff of administrative bodies now consists of workers.”<sup><a id="fnr.71" class="footref" href="#fn.71" role="doc-backlink">71</a></sup> All of this runs counter to Prof. Chomsky's claims that Lenin and the Bolsheviks were against workers' democracy, or that they destroyed workers' democracy.
+</p>
+
+<p>
+Finally, there is also no mention of Prof. Chomsky's alleged destruction of factory councils and workers' democracy (which is said to have occurred in 1917) in Rosa Luxemburg's 1918 work on the Russian Revolution, in which she criticises the Bolsheviks on their actions regarding agrarian policy, the Constituent Assembly, the Nationalities question, and even excessive political repression. Not once does she mention this alleged destruction of socialism by the Bolsheviks, however. It is hard to imagine that, whilst having knowledge of all manner of Bolshevik policy (even quoting slogans and pamphlets by Lenin and Trotsky), she was somehow ignorant of the fundamental nature of the Soviet economy and political organisation.<sup><a id="fnr.72" class="footref" href="#fn.72" role="doc-backlink">72</a></sup> If the actions of the Bolsheviks were the betrayal that Prof. Chomsky claims them to be, then one would surely expect Luxemburg the “mainstream Marxist” to have criticised them therefor.
+</p>
+
+<p>
+We can also look at Paul Avrich's writings on this topic, where he describes the ineffectiveness of the factory-council run economy that briefly existed in Russia immediately following the revolution:
+</p>
+
+<blockquote>
+<p>
+The syndicalist tide was carrying Russia to the brink of economic collapse. A British trade-union delegation visiting Russia in 1924 reported with characteristic English understatement that workers' control in 1917 “had a very bad effect on production.” The workers, said the report, had been converted into "a new body of shareholders." Time and again, Russian critics of workers' control charged that the individual factory committee, like the individual capitalist, ignored the interests of the economy "as a whole." A Bolshevik writer observed in March, 1918, that the workers considered tools and equipment "their own property." The factory committees had "the widest possible powers" over the disposition of property, reported the ILO. Cases of pillage and theft were not uncommon. W. H. Chamberlin recounts an anecdote about a worker who was asked, "What would you do if you were the director of the factory?" "I should steal a hundred rubles and run away," he replied. Individual factory committees sent "pushers" (tolkachi) into the provinces to purchase fuel and raw materials, sometimes for outrageous prices. Often they refused to share available supplies with other committees in the direst need. The local committees raised wages or prices indiscriminately and on occasion cooperated with the owners in return for special "bonuses."<sup><a id="fnr.73" class="footref" href="#fn.73" role="doc-backlink">73</a></sup>
+</p>
+</blockquote>
+
+<p>
+In short, Prof. Chomsky's claim that Lenin, Trotsky, and the Bolsheviks abolished the soviets and/or factory councils is unsubstantiated. Not only did his cited documents and institutions not support his claim, they actually seem to evidence the opposite: the soviets and factory councils were regulated by bodies that were ultimately elected by or comprised the soviets and factory councils themselves, etc. Moreover, there is evidence supporting the rationale behind the institution of this centralised regulation&#x2014;namely, the anarchy of decentralised production in the conditions immediately following the revolution.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd4aab0b" class="outline-2">
+<h2 id="orgd4aab0b">The forced industrialisation/collectivisation of the peasantry</h2>
+<div class="outline-text-2" id="text-orgd4aab0b">
+<p>
+According to Prof. Chomsky, Lenin sought to drive the peasantry into industrialisation (presumably meaning, collectivisation) by force:
+</p>
+
+<blockquote>
+<p>
+The Bolsheviks&#x2014;Lenin and Trotsky&#x2014;decided they had to <b>drive the backward peasantry to industrialization by force</b>, in order to lead ultimately to a socialist society.<sup><a id="fnr.74" class="footref" href="#fn.74" role="doc-backlink">74</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+They were orthodox Marxists (unlike Marx, incidentally); they believed in a version of Marxism that said that <b>revolution can't come in a backward peasant society</b>, which is what Russia was. (It was what we would now call a Third-World country, an undeveloped peasant society, with some development but owned by the West and so on&#x2014;I mean, [it had] a highly educated and productive intellectual class, but that's also true of Third-World societies&#x2026;) So they thought this couldn't happen, so therefore, <b>we have to drive this backward population through industrialization by force</b>&#x2014;and then, later on, by the iron laws of history and so on and so forth, we will come to socialism. Of course, it's all nonsense.<sup><a id="fnr.75" class="footref" href="#fn.75" role="doc-backlink">75</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+The peasant revolutionary forces were very much opposed to this incidentally. As distinct from Marx who saw revolutionary potential in the Russian peasantry, the urban communists, like Lenin were strongly opposed to that. In fact, a lot of Marx's later work was even suppressed, because they didn't like what he was saying. It wasn't Marx but their contempt for the backward peasants. Their conception was that Russia is <b>a backward peasant society, it has to be driven towards industrialization</b> and then out of that the iron laws of history will lead to socialism and so on but sometime in the future. In fact, they regarded Russia as a backwater. They were essentially waiting for a revolution in Germany, the most advanced capitalist country, that's where there should be a revolution. When the revolution was crushed in Germany in 1919, by that time Russia had been pretty much turned into the kind of labor army that Lenin and Trotsky were advocating, not totally but mostly, Kronstadt kind of finished it all. When the German revolution was crushed they realized that's not going to work, <b>so we have to do something else to drive Russia towards industrialization. Shortly after that comes the New Economic Policy which is essentially lets introduce state capitalism but with an iron fist, because we are going to drive them forward</b>.<sup><a id="fnr.76" class="footref" href="#fn.76" role="doc-backlink">76</a></sup>
+</p>
+</blockquote>
+
+<p>
+This is exactly wrong. For example, in his famous polemic against Karl Kautsky (October-November, 1918), Lenin explicitly stated that the general peasantry should not be forced into largescale, collectivised, industrialised farming, but rather, had to be convinced that such was in their own interests:
+</p>
+
+<blockquote>
+<p>
+These questions are:
+</p>
+
+<p>
+(1) Equal land tenure and
+</p>
+
+<p>
+(2) Nationalisation of the land&#x2014;the relation of these two measures to socialism in general, and to the transition from capitalism to communism in particular.
+</p>
+
+<p>
+(3) Farming in common as a transition from small scattered farming to large-scale collective farming; does the manner in which this question is dealt with in Soviet legislation meet the requirements of socialism?
+</p>
+
+<p>
+On the first question it is necessary, first of all, to establish the following two fundamental facts:
+</p>
+
+<p>
+(a) in reviewing the experience of 1905 (I may refer, for instance, to my work on the agrarian problem in the First Russian Revolution), the Bolsheviks pointed to the democratically progressive, the democratically revolutionary meaning of the slogan “equal land tenure”, and in 1917, <i>before</i> the October Revolution, they spoke of this quite definitely;
+</p>
+
+<p>
+(b) when enforcing the land socialisation law&#x2014;the "spirit" of which is equal land tenure&#x2014;the Bolsheviks most explicitly and definitely declared: this is not our idea, we do not agree with this slogan, but we think it our duty to enforce it because this is the demand of the overwhelming majority of the peasants. And the idea and demands of the majority of the working people are things that the working people must <i>discard of their own accord</i>: such demands cannot be either "abolished" or "skipped over." We Bolsheviks shall <i>help</i> the peasants to discard petty-bourgeois slogans, to <i>pass</i> from them as quickly and as easily as possible to socialist slogans.<sup><a id="fnr.77" class="footref" href="#fn.77" role="doc-backlink">77</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly, in a report on developments in the countryside from the 23rd of March, 1919, Lenin reiterated that the peasantry should not be forced into the “communia” (in this context, presumably meaning collective farming) proposed by the Bolsheviks:
+</p>
+
+<blockquote>
+<p>
+The economic task here is an entirely different one; there is no upper layer that can be cut off, leaving the foundation and the building intact. That upper layer which in the cities was represented by the capitalists does not exist in the villages. <i>Here coercion would ruin the whole cause</i>. Prolonged educational work is required. We have to give the peasant, who not only in our country but all over the world is a practical man and a realist, concrete examples to prove that the “communia” is the best possible thing.<sup><a id="fnr.78" class="footref" href="#fn.78" role="doc-backlink">78</a></sup>
+</p>
+</blockquote>
+
+<p>
+In the same report, Lenin also said:
+</p>
+
+<blockquote>
+<p>
+On this question we must say that we do encourage communes, but they must be so organised <i>as to gain the confidence of the peasants</i>. And until then we are pupils of the peasants and not their teachers. Nothing is more stupid than people who know nothing about farming and its specific features, rushing to the village only because they have heard of the advantages of socialised farming, are tired of urban life and desire to work in rural districts&#x2014;it is most stupid for such people to regard themselves as teachers of the peasants in every respect. <i>Nothing is more stupid than the very idea of applying coercion in economic relations with the middle peasant</i>.<sup><a id="fnr.79" class="footref" href="#fn.79" role="doc-backlink">79</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+Our decrees on peasant farming are in the main correct. We have no grounds for renouncing a single one of them, or for regretting a single one of them. But if the decrees are right, <i>it is wrong to impose them on the peasants by force</i>. That is not contained in a single decree. They are right inasmuch as they indicate the roads to follow, inasmuch as they call to practical measures. When we say, “Encourage associations”, we are giving instructions which must be tested many times before the final <i>form</i> in which to put them into effect is found. When it is stated that we must strive to gain the peasants' voluntary consent, it means that they must be persuaded, and persuaded by practical deeds. They will not allow themselves to be convinced by mere words, and they are perfectly right in that. It would be a bad thing if they allowed themselves to be convinced merely by reading decrees and agitational leaflets. If it were possible to reshape economic life in this way, such reshaping would not be worth a brass farthing. It must first be proved that such association is better, people must be united in such a way that they become actually united and are not at odds with each other&#x2014;it must be proved that association is advantageous. That is the way the peasant puts the question and that is the way our decrees put it. If we have not been able to achieve that so far, there is nothing to be ashamed of and we must admit it frankly.<sup><a id="fnr.80" class="footref" href="#fn.80" role="doc-backlink">80</a></sup>
+</p>
+</blockquote>
+
+<p>
+Finally, in report written on the 14th of March, 1919, Lenin reiterated:
+</p>
+
+<blockquote>
+<p>
+Now a tremendous effort is needed to convince them definitely that only by means of the communist organisation of production shall we be able to cope with the devastation caused by the war. This must be done by persuasion and not by force.<sup><a id="fnr.81" class="footref" href="#fn.81" role="doc-backlink">81</a></sup>
+</p>
+</blockquote>
+
+<p>
+If this weren't clear enough, Lenin subsequently specified:
+</p>
+
+<blockquote>
+<p>
+In the programme we shall adopt in a few days we are against any kind of force in respect of the middle peasant. Our Party makes this declaration. If there are arrests we condemn them and will put matters right. In respect of the kulak we are for force but in respect of the middle peasant we are against force. To him we say, “If you are on the side of Soviet power we shall not drive you into a commune by force, we have never forced peasants into communes and no decree to that effect exists.”<sup><a id="fnr.82" class="footref" href="#fn.82" role="doc-backlink">82</a></sup>
+</p>
+</blockquote>
+
+<p>
+In short, Prof. Chomsky is completely wrong about Lenin and the Bolsheviks forcibly collectivising or industrialising the peasantry&#x2014;this was a crime of Stalin and the later Stalinist bureaucracy, against the explicit program of Lenin. And, whilst it is true that peasant produce was forcibly expropriated under “war communism” during the Civil War (again, for the survival of the workers' state), this was not forced industrialisation or collectivisation (<i>pace</i> Prof. Chomsky) and was only a temporary measure&#x2014;the end of the Civil War saw the abolition of “war communism” and the introduction of the NEP, which allowed peasants to trade and accumulate private property.<sup><a id="fnr.83" class="footref" href="#fn.83" role="doc-backlink">83</a></sup> This is again completely contrary to Chomsky's characterisation of the NEP as a continuation of the forced industrialisation of the peasantry.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5c4ab0a" class="outline-2">
+<h2 id="org5c4ab0a">Lenin and Trotsky's authoritarianism</h2>
+<div class="outline-text-2" id="text-org5c4ab0a">
+<p>
+According to Prof. Chomsky, Lenin and Trotsky had established authoritarian control over the working class in the USSR by 1918:
+</p>
+
+<blockquote>
+<p>
+The Bolshevik Revolution, so-called ‘revolution' (it was really a coup), was really a counter-revolution, which placed state-power in the hands of a highly authoritarian, anti-socialist group, which within a couple of months had destroyed the factory councils, had destroyed the soviets, had dismissed the Constituent Assembly (because they knew they were going to lose), and had eliminated every popular movement, and had done exactly what Trotsky said: <b>Turn the country into a labour army under the control of the maximal leader</b>. That was mid-1918.<sup><a id="fnr.84" class="footref" href="#fn.84" role="doc-backlink">84</a></sup>
+</p>
+</blockquote>
+
+<p>
+Similarly:
+</p>
+
+<blockquote>
+<p>
+By early 1918 (this is still really before the civil war set in), Lenin's view was pretty clearly expressed. It was the view that&#x2014;both he and Trotsky took the position that---<b>what you need is what Trotsky called a labour army, which is submissive to the control of a single leader. It is that modern progress and development and socialism requires that the mass of the population ordinate themselves to a single leader in a disciplined workforce.</b> Well, that has absolutely nothing to do with socialism&#x2014;in fact, it is the exact opposite of it.<sup><a id="fnr.85" class="footref" href="#fn.85" role="doc-backlink">85</a></sup>
+</p>
+</blockquote>
+
+<p>
+Additionally, in writing:
+</p>
+
+<blockquote>
+<p>
+<b>Soon Lenin was to decree that the leadership must assume “dictatorial powers” over the workers, who must accept “unquestioning submission to a single will” and “in the interests of socialism,” must “unquestioningly obey the single will of the leaders of the labour process.” As Lenin and Trotsky proceeded with the militarization of labour, the transformation of the society into a labour army submitted to their single will, Lenin explained that subordination of the worker to “individual authority” is “the system which more than any other assures the best utilization of human resources”</b> &#x2014; or as Robert McNamara expressed the same idea, “vital decision-making&#x2026; must remain at the top&#x2026; the real threat to democracy comes not from overmanagement, but from undermanagement”; “if it is not reason that rules man, then man falls short of his potential,” and management is nothing other than the rule of reason, which keeps us free. At the same time, ‘factionalism' &#x2014; i.e., any modicum of free expression and organization &#x2014; was destroyed “in the interests of socialism,” as the term was redefined for their purposes by Lenin and Trotsky, who proceeded to create the basic protofascist structures converted by Stalin into one of the horrors of the modern age.<sup><a id="fnr.86" class="footref" href="#fn.86" role="doc-backlink">86</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+Not over night, but over a short time they were able to basically dismantle the soviets, the factory councils, <b>to convert the labor force into a labor army</b>.<sup><a id="fnr.87" class="footref" href="#fn.87" role="doc-backlink">87</a></sup>
+</p>
+</blockquote>
+
+<p>
+And finally:
+</p>
+
+<blockquote>
+<p>
+In fact, they regarded Russia as a backwater. They were essentially waiting for a revolution in Germany, the most advanced capitalist country, that's where there should be a revolution. When the revolution was crushed in Germany in 1919, <b>by that time Russia had been pretty much turned into the kind of labor army that Lenin and Trotsky were advocating</b>, not totally but mostly, Kronstadt kind of finished it all.<sup><a id="fnr.88" class="footref" href="#fn.88" role="doc-backlink">88</a></sup>
+</p>
+</blockquote>
+
+<p>
+The “militarization of labour” or “labour army” refers to two intertwined practises. Firstly, the use of some parts of the military for labour in industrial production, and secondly, the putting into practice a principle already in the Soviet constitution: “He who works not, neither shall he eat”; which is to say the introduction of disciplined, compulsory, labour service. On the origins of the military policy, Trotsky explained:
+</p>
+
+<blockquote>
+<p>
+The question of the application of armies to labor purposes, which has acquired amongst us an enormous importance from the point of view of principle, was approached by us by the path of practice, not at all on the foundations of theoretical consideration. On certain borders of Soviet Russia, circumstances had arisen which had left considerable military forces free for an indefinite period. To transfer them to other active fronts, especially in the winter, was difficult in consequence of the disorder of railway transport. Such, for example, proved the position of the Third Army, distributed over the provinces of the Ural and the Ural area. The leading workers of that army, understanding that as yet it could not be demobilized, themselves raised the question of its transference to labor work. They sent to the centre a more or less worked-out draft decree for a labor army.<sup><a id="fnr.89" class="footref" href="#fn.89" role="doc-backlink">89</a></sup>
+</p>
+</blockquote>
+
+<p>
+As to the reception of this policy (within the military), he goes on:
+</p>
+
+<blockquote>
+<p>
+The Red soldiers did not scatter when they were transformed from military to labor service, as the sceptics prophesied. Thanks to our splendidly-organized agitation, the transference itself took place amidst great enthusiasm. True, a certain portion of the soldiers tried to leave the army, but this always happens when a large military formation is transferred from one front to another, or is sent from the rear to the front&#x2014;in general when it is shaken up&#x2014;and when potential desertion becomes active.<sup><a id="fnr.90" class="footref" href="#fn.90" role="doc-backlink">90</a></sup>
+</p>
+</blockquote>
+
+<p>
+The use of the military to aid in production is a pragmatic decision, and not something that contradicts Marxist principles. Regardless, Prof. Chomsky is probably objecting to <i>compulsory</i> labour. The background of this policy and its justification&#x2014;its <i>necessity</i>&#x2014;are explained by Trotsky in the above-cited work:
+</p>
+
+<blockquote>
+<p>
+Yet labor-power is required &#x2013; required more than at any time before. Not only the worker, but the peasant also, must give to the Soviet State his energy, in order to ensure that laboring Russia, and with it the laboring masses, should not be crushed. The only way to attract the labor power necessary for our economic problems is to introduce <i>compulsory labor service</i>.<sup><a id="fnr.91" class="footref" href="#fn.91" role="doc-backlink">91</a></sup>
+</p>
+</blockquote>
+
+<p>
+He goes on:
+</p>
+
+<blockquote>
+<p>
+The very principle of compulsory labor service is for the Communist quite unquestionable. “He who works not, neither shall he eat.” And as all must eat, all are obliged to work. Compulsory labor service is sketched in our Constitution and in our Labor Code. But hitherto it has always remained a mere principle. Its application has always had an accidental, impartial, episodic character. Only now, when along the whole line we have reached the question of the economic re-birth of the country, have problems of compulsory labor service arisen before us in the most concrete way possible. The only solution of economic difficulties that is correct from the point of view both of principle and of practice is to treat the population of the whole country as the reservoir of the necessary labor power&#x2014;an almost inexhaustible reservoir&#x2014;and to introduce strict order into the work of its registration, mobilization, and utilization.<sup><a id="fnr.92" class="footref" href="#fn.92" role="doc-backlink">92</a></sup>
+</p>
+</blockquote>
+
+<p>
+As these quotations show, these practices were necessary during a time of civil war, when the condition of the economy was very bad. The difficulties of the civil war, and more specifically, the backwardness and insufficient character of the Soviet economy and its virtual breakdown by the end of the civil war, are universally recognised.
+</p>
+
+<p>
+In regards to “Unquestioning submission to a single will”, Prof. Chomsky's criticism seems to be presented out of context. Lenin is advocating strict discipline <i>under a specific set of economic conditions and only for a specific time</i>. Lenin (quoted in full!) describes said conditions as follows:
+</p>
+
+<blockquote>
+<p>
+&#x2026;concerning the significance of individual dictatorial powers from the point of view of the <b>specific tasks of the present moment</b>, it must be said that <b>large-scale machine industry</b>&#x2014;which is precisely the material source, the productive source, the foundation of socialism&#x2014;calls for absolute and strict <i>unity of will</i>, which directs the joint labours of hundreds, thousands and tens of thousands of people. The technical, economic and historical necessity of this is obvious, and all those who have thought about socialism have always regarded it as one of the conditions of socialism. But how can strict unity of will be ensured? By thousands subordinating their will to the will of one.
+</p>
+
+<p>
+<b>Given ideal class-consciousness and discipline</b> on the part of those participating in the common work, this <b>subordination would be something like the mild leadership of a conductor of an orchestra.</b> It may assume the sharp forms of a dictatorship if ideal discipline and class-consciousness are lacking. But be that as it may, <b><i>unquestioning subordination</i> to a single will is absolutely necessary for the success of processes organised on the pattern of large-scale machine industry. On the railways it is twice and three times as necessary</b>.<sup><a id="fnr.93" class="footref" href="#fn.93" role="doc-backlink">93</a></sup>
+</p>
+</blockquote>
+
+<p>
+Lenin states these things in reference to economic activity and production, and it is no secret that Marxists advocate command economies. The centralised and disciplined organisation of production and distribution during periods of economic necessity (such as civil war, and immense underdevelopment in the face of civil war) is not only acceptable but necessary for the advancement and survival of a revolution.
+</p>
+
+<p>
+It might be the case that Lenin was wrong about the economic necessities and the discipline of workers. However, that requires its own argument and does not show Leninist theory (as opposed to Lenin's personal judgement) to be faulty or out of accord with Marxist principles, nor does it show any counter-revolutionary intent on the part of the Lenin.
+</p>
+
+<p>
+To provide evidence that Lenin and Trotsky were in line with the Marxist orthodoxy in this regard, we can simply read what Engels wrote on the matter:
+</p>
+
+<blockquote>
+<p>
+Let us take by way of example a cotton spinning mill. The cotton must pass through at least six successive operations before it is reduced to the state of thread, and these operations take place for the most part in different rooms. Furthermore, keeping the machines going requires an engineer to look after the steam engine, mechanics to make the current repairs, and many other labourers whose business it is to transfer the products from one room to another, and so forth. All these workers, men, women and children, are obliged to begin and finish their work at the hours fixed by the authority of the steam, which cares nothing for individual autonomy. The workers must, therefore, first come to an understanding on the hours of work; and these hours, once they are fixed, must be observed by all, without any exception. <b>Thereafter particular questions arise in each room and at every moment concerning the mode of production, distribution of materials, etc., which must be settled at once on pain of seeing all production immediately stopped; whether they are settled by decision of a delegate placed at the head of each branch of labour or, if possible, by a majority vote, the will of the single individual will always have to subordinate itself, which means that questions are settled in an authoritarian way</b>.<sup><a id="fnr.94" class="footref" href="#fn.94" role="doc-backlink">94</a></sup>
+</p>
+</blockquote>
+
+<p>
+He goes on:
+</p>
+
+<blockquote>
+<p>
+Let us take another example-the railway. Here too the co-operation of an infinite number of individuals is absolutely necessary, and this co-operation must be practised during precisely fixed hours so that no accidents may h ap pen. Here, too, the first condition of the job is a dominant will that settles all subordinate questions, <b>whether this will is represented by a single delegate or a committee charged with the execution of the resolutions of the majority of persons interested. In either case there is very pronounced authority</b>.<sup><a id="fnr.95" class="footref" href="#fn.95" role="doc-backlink">95</a></sup>
+</p>
+</blockquote>
+
+<p>
+At one point, Engels sounds almost exactly like Lenin:
+</p>
+
+<blockquote>
+<p>
+But the necessity of authority, and of imperious authority at that, will nowhere be found more evident than on board a ship on the high seas. There, in time of danger, the lives of all depend on the instantaneous and <b>absolute obedience of all to the will of one</b>.<sup><a id="fnr.96" class="footref" href="#fn.96" role="doc-backlink">96</a></sup>
+</p>
+</blockquote>
+
+<p>
+No counter-argument is even needed, however, as Prof. Chomsky provides no argument that socialism and Marxism are incompatible with Leninist centralism and measures of authority in the first place. He merely assumes a syndicalist (or council-communist) interpretation of Marxism without giving any justification for his view of what the orthodox position is.
+</p>
+
+<p>
+Finally, Prof. Chomsky also wrote:
+</p>
+
+<blockquote>
+<p>
+Not only the masses, but even <b>the Party must be subject to “vigilant control from above,” so Trotsky held</b> as he made the transition from revolutionary intellectual to State priest.<sup><a id="fnr.97" class="footref" href="#fn.97" role="doc-backlink">97</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky obtained this quotation (“vigilant control from above”) from Brinton's <i>The Bolsheviks and Workers' Control</i>,<sup><a id="fnr.98" class="footref" href="#fn.98" role="doc-backlink">98</a></sup> who in turn quoted it as the words of Trotsky from Deutscher's <i>The Prophet Armed</i>.<sup><a id="fnr.99" class="footref" href="#fn.99" role="doc-backlink">99</a></sup> Deutscher however was not quoting Trotsky in this instance, but rather, summarising <i>in his own words</i> Trotsky's defence of vanguardism (or more specifically, “the centralistic mode of organization”).<sup><a id="fnr.100" class="footref" href="#fn.100" role="doc-backlink">100</a></sup> Regardless, this proposal is not inherently undemocratic or authoritarian, as Prof. Chomsky would have it&#x2014;obedience to leadership is not in and of itself inconsistent with having a leadership that is accountable and periodically elected democratically. Prof. Chomsky's point thus remains unsubstantiated.
+</p>
+
+<blockquote>
+<p>
+
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org8e507d1" class="outline-2">
+<h2 id="org8e507d1">Socialism in the USSR</h2>
+<div class="outline-text-2" id="text-org8e507d1">
+<p>
+According to Prof. Chomsky, the Bolsheviks had destroyed Socialism in the USSR by 1918 or mid-1918:
+</p>
+
+<blockquote>
+<p>
+When he [i.e., Lenin] took power, he reverted to the former Vanguardism and moved at once to eliminate the organs of workers' control. <b>Now, that meant he was moving to destroy socialism, if socialism has as its core workers' control over production.</b> The soviets and the factory councils were instruments of workers control; and you could say they were defective instruments, they had to be worked out better and so on, yeah, no doubt, but they were the instruments that had been developed in the course of popular struggle to implement basically workers control, and those were the first things to go. By early 1918 (this is still really before the civil war set in), Lenin's view was pretty clearly expressed. It was the view that&#x2014;both he and Trotsky took the position that&#x2014;what you need is what Trotsky called a labour army, which is submissive to the control of a single leader. It is that modern progress and development and socialism requires that the mass of the population ordinate themselves to a single leader in a disciplined workforce. <b>Well, that has absolutely nothing to do with socialism&#x2014;in fact, it is the exact opposite of it</b>.<sup><a id="fnr.101" class="footref" href="#fn.101" role="doc-backlink">101</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+Lenin reconstructed the Tsarist systems of oppression, often more efficiently: Cheka, KGB, and other techniques of control and oppression. I think <b>from that point on there was nothing remotely like socialism in the Soviet Union</b>. I think it was in fact, in my view, a precursor of later forms of totalitarianism.<sup><a id="fnr.102" class="footref" href="#fn.102" role="doc-backlink">102</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+Lenin remained despite it all sort of an orthodox Marxist in many respects, and as an orthodox Marxist, he didn't believe that it was possible to have socialism in the Soviet Union. Up to his death (or shortly before his death, when he was still writing/speaking lucidly), he kept the view that the Soviet Revolution was a holding-action. They were just going to hold things in place until the real revolution took place in Germany, because the revolution according to Marxist doctrine was going to take place in the most advanced sector of modern industrial capitalism, for all the reasons that you read about in Marx. That's where the revolution had to take place; obviously, that wasn't the Soviet Union, so there couldn't be socialism there, it was just some kind of holding action. <b>And that presumably gave some sort of justification for eliminating the socialist institutions</b>&#x2014;I don't think it was a real justification, but probably that was the internal justification. And again, in taking that view, he was in accord with the mainstream Marxist tradition.
+</p>
+
+<p>
+After that comes the view that all of this is socialism.<sup><a id="fnr.103" class="footref" href="#fn.103" role="doc-backlink">103</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+Take a look back and see whether the moves that Lenin took&#x2014;and that Trotsky supported him in taking, and that they both advocated&#x2014;had anything to do with socialism as it was understood, say, in the Marxist tradition, or in the left/libertarian tradition, and I think the answer that you'll discover when you look at that is that they didn't. In fact, <b>this was a destruction of socialist institutions</b>.<sup><a id="fnr.104" class="footref" href="#fn.104" role="doc-backlink">104</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+The Bolshevik Revolution, so-called ‘revolution' (it was really a coup), was really a counter-revolution, which placed state-power in the hands of a highly authoritarian, anti-socialist group, which within a couple of months had destroyed the factory councils, had destroyed the soviets, had dismissed the Constituent Assembly (because they knew they were going to lose), and had eliminated every popular movement, and had done exactly what Trotsky said: Turn the country into a labour army under the control of the maximal leader. <b>That was mid-1918. Since then there hasn't been a shred of socialism in the Soviet Union</b>. Now, of course they called it socialism, but they also called it democracy. They were the peoples' democracy, the purest form of democracy and socialism.<sup><a id="fnr.105" class="footref" href="#fn.105" role="doc-backlink">105</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+It has nothing to do with socialism. <b>They destroyed socialism within weeks. They didn't wait. By 1918 it was finished. And they knew it. It's not a secret. They knew it. In fact, Lenin, as soon as got grips of things, he moved to what he called state capitalism. Which is what it was. Had nothing to do with socialism</b>. Socialism&#x2026; I mean, there's no point arguing about what the word means, but what it always meant at the core was that producers take control over the production. Working people take control of production&#x2014;what's sometimes called Industrial Democracy. That was the absolute core of it. Well there was more socialism in Germany, in Western Europe, than there was in Russia. Russia is about the most anti-socialist place you can imagine since 1918. Had wage labour, had super exploitation, had no elements of workers' control or involvement or participation. What has that got to do with socialism? It's the exact opposite on every point.<sup><a id="fnr.106" class="footref" href="#fn.106" role="doc-backlink">106</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+<b>As Lenin took power, among his first acts, along with Trotsky, was to destroy the socialist institutions that had arisen in the pre-Bolshevik period</b>: soviets, factory councils, the Constituent Assembly (which was dominated by Left-Social-Revolutionaries, largely peasant-based). And of course, they went to war against the anarchists&#x2014;a major war to try to wipe them out, Makhno's army and so on. And there was a sort of a logic behind it: they were orthodox Marxists (unlike Marx, incidentally); they believed in a version of Marxism that said that revolution can't come in a backward peasant society, which is what Russia was. (It was what we would now call a Third-World country, an undeveloped peasant society, with some development but owned by the West and so on&#x2014;I mean, [it had] a highly educated and productive intellectual class, but that's also true of Third-World societies&#x2026;) So they thought this couldn't happen, so therefore, we have to drive this backward population through industrialization by force&#x2014;and then, later on, by the iron laws of history and so on and so forth, we will come to socialism.
+</p>
+
+<p>
+Of course, it's all nonsense.<sup><a id="fnr.107" class="footref" href="#fn.107" role="doc-backlink">107</a></sup>
+</p>
+</blockquote>
+
+<p>
+Prof. Chomsky's specific claims about factory councils and soviets have already been addressed, but it is worth pointing out that his claims about the immediate or rapid Bolshevik abolition of socialism (by 1918 or mid-1918 at the latest) rest upon a fundamental mistake---<i>viz</i>., the notion that socialism was somehow already established in Russia, even partially. In fact, Prof. Chomsky has it exactly backwards: it was precisely in mid-1918 that most capitalists in Russia were expropriated, when the commanding heights of the means of production were seized by the Russian workers' state and henceforth run for use rather than profit.<sup><a id="fnr.108" class="footref" href="#fn.108" role="doc-backlink">108</a></sup> Of course, petty-bourgeois and peasant capitalism lingered indefinitely (for example, peasant private ownership of means of production continued even after Stalin's forced collectivisations), such that the USSR never meaningfully qualified as socialist in general.<sup><a id="fnr.109" class="footref" href="#fn.109" role="doc-backlink">109</a></sup> Nevertheless, the commanding heights of the means of production (namely, the big factories and industries in the cities) were socialised&#x2014;expropriated from the capitalist class&#x2014;by the Bolsheviks, mostly around mid-1918 (in April, May, and June).<sup><a id="fnr.110" class="footref" href="#fn.110" role="doc-backlink">110</a></sup> In other words, it was only from around mid-1918 onwards that capitalism began to be abolished in Russia. And, since even anarchists can agree that socialism would <i>not</i> constitute private ownership of the means of production and profit-driven production (i.e., socialism is not capitalism), this entails that there was no socialism&#x2014;or socialist institutions&#x2014;in any meaningful sense before this point.
+</p>
+
+<p>
+In short, the only real “socialist” infrastructure in the USSR (means of production controlled by the workers via their state and run for use or need rather than profit) was established at precisely the point that Prof. Chomsky claims it was abolished.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaee3b27" class="outline-2">
+<h2 id="orgaee3b27">Lenin on state capitalism in the USSR</h2>
+<div class="outline-text-2" id="text-orgaee3b27">
+<p>
+According to Prof. Chomsky, Lenin himself said that the USSR was state-capitalist rather than socialist:
+</p>
+
+<blockquote>
+<p>
+They destroyed socialism within weeks. They didn't wait. By 1918 it was finished. And they knew it. It's not a secret. They knew it. In fact, Lenin, as soon as he got grips of things, <b>he moved to what he called state capitalism.</b> <b>Which is what it was</b>. Had nothing to do with socialism.<sup><a id="fnr.111" class="footref" href="#fn.111" role="doc-backlink">111</a></sup>
+</p>
+</blockquote>
+
+<p>
+This is a common misunderstanding. According to Marx, there will be a “transition period” between capitalism and socialism overseen by the dictatorship of the proletariat, <sup><a id="fnr.112" class="footref" href="#fn.112" role="doc-backlink">112</a></sup> under which capitalism and then class distinctions in general will be abolished.<sup><a id="fnr.113" class="footref" href="#fn.113" role="doc-backlink">113</a></sup> Lenin understood the USSR to be such a workers' state,<sup><a id="fnr.114" class="footref" href="#fn.114" role="doc-backlink">114</a></sup> and also described it as “transitional”&#x2014;for example, in January of 1918:
+</p>
+
+<blockquote>
+<p>
+We are far from having completed even the transitional period from capitalism to socialism. We have never cherished the hope that we could finish it without the aid of the international proletariat. We never had any illusions on that score, and we know how difficult is the road that leads from capitalism to socialism. But it is our duty to say that our Soviet Republic is a socialist republic because we have taken this road, and our words will not be empty words.<sup><a id="fnr.115" class="footref" href="#fn.115" role="doc-backlink">115</a></sup>
+</p>
+</blockquote>
+
+<p>
+Lenin reiterated this point in May of 1918 when he described the nascent USSR as having a “transitional character”, before specifying the exact composition of the economy therein:
+</p>
+
+<blockquote>
+<p>
+But what does the word “transition” mean? Does it not mean, as applied to an economy, that the present system contains elements, particles, fragments of both capitalism and socialism? Everyone will admit that it does. But not all who admit this take the trouble to consider what elements actually constitute the various socio-economic structures that exist in Russia at the present time. And this is the crux of the question.
+</p>
+
+<p>
+Let us enumerate these elements:
+</p>
+<ol class="org-ol">
+<li>patriarchal, i.e., to a considerable extent natural, peasant
+farming;</li>
+<li>small commodity production (this includes the majority of
+those peasants who sell their grain);</li>
+<li>private capitalism;</li>
+<li>state capitalism;</li>
+<li>socialism.</li>
+</ol>
+
+<p>
+Russia is so vast and so varied that all these different types of socio-economic structures are intermingled. This is what constitutes the specific features of the situation.
+</p>
+
+<p>
+The question arises: what elements predominate? Clearly in a small-peasant country, the petty-bourgeois element predominates and it must predominate, for the great majority of those working the land are small commodity producers.<sup><a id="fnr.116" class="footref" href="#fn.116" role="doc-backlink">116</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise, in April of 1921, Lenin outlined the composition of the Soviet
+economy at the time as follows:
+</p>
+
+<blockquote>
+<p>
+Take a close look at the actual economic relations in Russia. We find at least five different economic systems, or structures, which, from bottom to top, are: first, the patriarchal economy, when the peasant farms produce only for their own needs, or are in a nomadic or semi-nomadic state, and we happen to have any number of these; second, small commodity production, when goods are sold on the market; third, capitalist production, the emergence of capitalists, small private capital; fourth, state capitalism, and fifth, socialism.<sup><a id="fnr.117" class="footref" href="#fn.117" role="doc-backlink">117</a></sup>
+</p>
+</blockquote>
+
+<p>
+Finally, Lenin (again in April of 1921) reiterated that the Soviet economy (“our present-day economy”) was “transitional from capitalism to socialism.”<sup><a id="fnr.118" class="footref" href="#fn.118" role="doc-backlink">118</a></sup> Lenin was thus absolutely clear that the Soviet economy did not comprise a single mode of production, such as capitalism or state capitalism; rather, it contained various elements, including both state-capitalist enterprises (i.e., the Soviet state temporarily leasing enterprises to foreign capitalists)<sup><a id="fnr.119" class="footref" href="#fn.119" role="doc-backlink">119</a></sup> and “socialist factories” (i.e., factories nationalised and run by the workers' state).<sup><a id="fnr.120" class="footref" href="#fn.120" role="doc-backlink">120</a></sup> It is true that Lenin argued for increases in or concessions to state capitalism (in the form of foreign leases and the toleration of peasant commerce), which was implemented as the NEP in March of 1921, but these were (1) temporary measures to stimulate economic growth and recovery in an already-underdeveloped country, made necessary by the destruction of Russian infrastructure and productive forces in the preceding civil war (1918-1921),<sup><a id="fnr.121" class="footref" href="#fn.121" role="doc-backlink">121</a></sup> and (2) not generalised across the entire economy.<sup><a id="fnr.122" class="footref" href="#fn.122" role="doc-backlink">122</a></sup> In other words, the USSR remained transitional between capitalism and socialism, even if the relative weight of each mode varied over time according to circumstance.<sup><a id="fnr.123" class="footref" href="#fn.123" role="doc-backlink">123</a></sup> Prof. Chomsky also wrote the following in connection to state capitalism:
+</p>
+
+<blockquote>
+<p>
+Lenin's dictum that “socialism is nothing but state capitalist monopoly made to benefit the whole people,” who must of course trust the benevolence of their leaders, expresses the perversion of ‘socialism' to the needs of the State&#x2026;<sup><a id="fnr.124" class="footref" href="#fn.124" role="doc-backlink">124</a></sup>
+</p>
+</blockquote>
+
+<p>
+The full quotation from Lenin (written in September of 1917) is as follows:
+</p>
+
+<blockquote>
+<p>
+For socialism is merely the next step forward from state capitalist monopoly. Or, in other words, socialism is merely state-capitalist monopoly <i>which is made to serve the interests of the whole people</i> and has to that extent ceased to be capitalist monopoly.<sup><a id="fnr.125" class="footref" href="#fn.125" role="doc-backlink">125</a></sup>
+</p>
+</blockquote>
+
+<p>
+If Prof. Chomsky is objecting to the Soviet state running industry, then this is merely a repetition of his claim that the Bolsheviks were undemocratic or abolished organs of workers' power&#x2014;in which case, see above. Alternatively, if Prof. Chomsky is suggesting that Lenin was conflating state capitalism and socialism, then he is mistaken. Lenin was simply pointing out that massive concentrations of industry by capitalist syndicates or the bourgeois state constitute the technological and productive prerequisite and precursor to socialist production, needing only to be taken over by the workers&#x2014;or the workers' state&#x2014;and run for need or use rather than profit.<sup><a id="fnr.126" class="footref" href="#fn.126" role="doc-backlink">126</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfe6f096" class="outline-2">
+<h2 id="orgfe6f096">Lenin on socialism in the USSR</h2>
+<div class="outline-text-2" id="text-orgfe6f096">
+<p>
+According to Prof. Chomsky, Lenin himself said that the USSR was not
+socialist:
+</p>
+
+<blockquote>
+<p>
+Lenin remained despite it all sort of an orthodox Marxist in many respects, and as an orthodox Marxist, <b>he didn't believe that it was possible to have socialism in the Soviet Union</b>. Up to his death (or shortly before his death, when he was still writing/speaking lucidly), <b>he kept the view that the Soviet Revolution was a holding-action</b>. They were just going to hold things in place until the real revolution took place in Germany, because the revolution according to Marxist doctrine was going to take place in the most advanced sector of modern industrial capitalism, for all the reasons that you read about in Marx. That's where the revolution had to take place; obviously, that wasn't the Soviet Union, so there couldn't be socialism there, it was just some kind of holding action.<sup><a id="fnr.127" class="footref" href="#fn.127" role="doc-backlink">127</a></sup>
+</p>
+</blockquote>
+
+<p>
+And:
+</p>
+
+<blockquote>
+<p>
+As Lenin took power, among his first acts, along with Trotsky, was to destroy the socialist institutions that had arisen in the pre-Bolshevik period: soviets, factory councils, the Constituent Assembly (which was dominated by Left-Social-Revolutionaries, largely peasant-based). And of course, they went to war against the anarchists&#x2014;a major war to try to wipe them out, Makhno's army and so on. And there was a sort of a logic behind it: they were orthodox Marxists (unlike Marx, incidentally); they believed in a version of Marxism that said that <b>revolution can't come in a backward peasant society, which is what Russia was</b>. (It was what we would now call a Third-World country, an undeveloped peasant society, with some development but owned by the West and so on&#x2014;I mean, [it had] a highly educated and productive intellectual class, but that's also true of Third-World societies&#x2026;) So they thought this couldn't happen, so therefore, we have to drive this backward population through industrialization by force&#x2014;and then, later on, by the iron laws of history and so on and so forth, we will come to socialism. Of course, it's all nonsense.<sup><a id="fnr.128" class="footref" href="#fn.128" role="doc-backlink">128</a></sup>
+</p>
+</blockquote>
+
+<p>
+That Lenin did not regard the USSR to be socialist is certainly true, but this fact will only be surprising to non-socialists, and perhaps some Stalinists. The USSR consciously and openly emerged as a Workers' State&#x2014;a dictatorship of the proletariat&#x2014;in transition between capitalism and socialism, as has been noted already. For example:
+</p>
+
+<blockquote>
+<p>
+No one, I think, in studying the question of the economic system of Russia, has denied its transitional character. Nor, I think, has any Communist denied that the term Socialist Soviet Republic implies the determination of Soviet power to achieve the transition to socialism, and not that the new economic system is recognised as a socialist order.<sup><a id="fnr.129" class="footref" href="#fn.129" role="doc-backlink">129</a></sup>
+</p>
+</blockquote>
+
+<p>
+Likewise:
+</p>
+
+<blockquote>
+<p>
+We are far from having completed even the transitional period from capitalism to socialism. We have never cherished the hope that we could finish it without the aid of the international proletariat. We never had any illusions on that score, and we know how difficult is the road that leads from capitalism to socialism. But it is our duty to say that our Soviet Republic is a socialist republic because we have taken this road, and our words will riot be empty words.<sup><a id="fnr.130" class="footref" href="#fn.130" role="doc-backlink">130</a></sup>
+</p>
+</blockquote>
+
+<p>
+Lenin and Trotsky alike were clear that only the victory of similar revolutions in advanced countries like Germany and Italy (and therefrom, the flow of expertise, technology, resources, and other such aid to Russia) could guarantee the development of the advanced means of production necessary for the generalisation of worker-run need-based production, and thereby, the elimination of classes and the Law of Value&#x2014;in other words, the establishment of socialism.<sup><a id="fnr.131" class="footref" href="#fn.131" role="doc-backlink">131</a></sup> Only Stalinists (and apparently, anarchists like Prof. Chomsky) believe that it is plausible that socialism could be constructed and survive within a single country like Russia.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfdd9b64" class="outline-2">
+<h2 id="orgfdd9b64">Conclusion</h2>
+<div class="outline-text-2" id="text-orgfdd9b64">
+<p>
+Every one of Prof. Chomsky's criticisms of Lenin, Trotsky, and the Bolsheviks addressed above is unsubstantiated, contradictory, or based on false premises. In light of Prof. Chomsky's extremely impressive record and abilities, some of his errors on these matters are frankly astonishing: when it comes to Lenin's views on peasant revolution, vanguardism, and the forced industrialisation/collectivisation of peasants, for example, Prof. Chomsky literally has it backwards. Likewise, the proposition that <i>State and Revolution</i> is a left-communist work is sheer lunacy. What explains such basic errors?
+</p>
+
+<p>
+In Prof. Chomsky's defence, he is not personally responsible for some of these errors. It is clear that Prof. Chomsky is relying heavily upon the work of the left-communist intellectual Maurice Brinton, who is the real culprit here. As a general principle, this approach is not unreasonable: Prof. Chomsky is not a specialist in Soviet history or Marxist literature, so like most who deal with topics beyond their purview, he is primarily relying upon the analysis and reporting of a secondary source or authority. In this particular case, however, reliance on authority has backfired: whether due to motivated reasoning or dishonesty, Brinton's relevant arguments are riddled with basic errors&#x2014;errors that are reproduced by Prof. Chomsky.
+</p>
+
+<p>
+Of course, Prof. Chomsky gets some things right: for example, he correctly notes that Lenin repudiated the notion that socialism was attainable within the confines of a single country&#x2014;a notion that was anachronistically ascribed to Lenin by Stalin after the former's death. This criticism only applies to Stalinists, however: for those who support the theory and practice of Lenin, Trotsky, and the Bolsheviks, none of Chomsky's criticisms are successful.
+</p>
+
+<p>
+Prof. Chomsky has said in reference to Marx and Einstein that one ought not worship these men; rather, one ought to read the important things that they have said and disregard their mistakes. We hope therefore that we have treated Prof. Chomsky in a similar manner&#x2014;a manner that he would deem appropriate. Despite our criticisms, we would like to once again emphasise our deep appreciation for his work. Most importantly, we hope that this article contributes to correcting record of the Bolsheviks and popular misconceptions about Leninist theory, which we regard as the solution to the societal problems that Prof. Chomsky has spent his career exposing and analysing.
+</p>
+
+<p>
+We leave the last word to Luxemburg: “the future everywhere belongs to
+“Bolshevism.””<sup><a id="fnr.132" class="footref" href="#fn.132" role="doc-backlink">132</a></sup>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc730590" class="outline-2">
+<h2 id="orgc730590">Bibliography</h2>
+<div class="outline-text-2" id="text-orgc730590">
+<p>
+Avrich, Paul H. ‘The Bolshevik Revolution and Workers' Control in
+Russian Industry', <i>Slavic Review</i>, Volume 22, Number 1 (1963).
+</p>
+
+<p>
+Barnes, Jack. <i>Their Trotsky and Ours</i> (New York, U.S.A: Pathfinder
+Press, 2008).
+</p>
+
+<p>
+Boettke, Peter J. <i>The Political Economy of Soviet Socialism: The
+Formative Years, 1918-1928</i> (New York, U.S.A: Springer Science+Business
+Media, L.L.C, 1990).
+</p>
+
+<p>
+Brinton, Maurice. <i>The Bolsheviks and Workers' Control, 1917 to 1921:
+The State and</i> <i>Counter-Revolution</i> (London, U.K: Solidarity, 1970).
+</p>
+
+<p>
+Central Executive Committee (trans. Emanuel Aronsberg), ‘Decree on
+Establishment of the Supreme Council of National Economy' (December,
+1917), in James Bunyan &amp; Harold H. Fisher, /The Bolshevik Revolution,
+1917-1918: Documents and Materials/(Stanford, U.S.A: Stanford University
+Press, 1961).
+</p>
+
+<p>
+Chomsky, Noam. Interview with Christopher Helali, ‘Noam Chomsky on
+Revolutionary Violence, Communism and the American Left', <i>Pax Marxista</i>
+(12th/March/2013): <a href="https://chomsky.info/20130312/">https://chomsky.info/20130312/</a>
+</p>
+
+<p>
+&#x2014; interviewed in ‘Human Resources: Social Engineering in the 20th
+Century' documentary (2010), available online:
+<a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a>
+</p>
+
+<p>
+&#x2014; interviewed on <i>Roda</i> <i>Viva</i> (9th/December/1996), available online:
+<a href="https://youtu.be/Zx6VlKOU1AM?t=1227">https://youtu.be/Zx6VlKOU1AM?t=1227</a>
+</p>
+
+<p>
+&#x2014; ‘Manufacturing Consent: The Political Economy of the Mass Media',
+lecture at University of Wisconsin (15th/March/1989), available online:
+<a href="https://youtu.be/WsC0q3CO6lM?t=272">https://youtu.be/WsC0q3CO6lM?t=272</a>
+</p>
+
+<p>
+&#x2014; Q&amp;A at an unspecified event, available online:
+<a href="https://youtu.be/l_jRd59qy0A?t=121">https://youtu.be/l_jRd59qy0A?t=121</a>
+</p>
+
+<p>
+&#x2014; ‘The Concentration of Power and the Political Economy of Human
+Rights', lecture at Clark University (27th or 28th/September/1994),
+available online: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a>
+</p>
+
+<p>
+&#x2014; ‘The Soviet Union Versus Socialism', <i>Our Generation</i>
+(Spring-Summer, 1986): <a href="https://chomsky.info/1986____/">https://chomsky.info/1986____/</a>
+</p>
+
+<p>
+D'Amato, Paul. ‘The myth of Lenin's elitism', <i>International Socialist
+Review</i>, Issue 60 (July- August, 2008):
+<a href="https://www.isreview.org/issues/60/feat-leninmyth.shtml">https://www.isreview.org/issues/60/feat-leninmyth.shtml</a>
+</p>
+
+<p>
+Deutscher, Isaac. <i>The Prophet Armed: Trotsky, 1879-1921</i> (Oxford, U.K:
+Oxford University Press, 1954).
+</p>
+
+<p>
+Engels, Friedrich., ‘On Authority', in Robert C. Tucker (ed.), <i>The
+Marx-Engels Reader</i>, 2nd edition (New York, U.S.A: W. W. Norton &amp;
+Company, 1978).
+</p>
+
+<p>
+&#x2014; <i>The Housing Question</i> (New York, U.S.A: International Publishers,
+1935).
+</p>
+
+<p>
+Kautsky, Karl (trans. Algie M. Simons). <i>The Road to Power</i> (Chicago,
+U.S.A: Samuel A. Block, 1909).
+</p>
+
+<p>
+Khoo, Heiko. ‘Noam Chomsky and Marxism: On the roots of modern
+"authoritarianism"', <i>In Defence of Marxism</i> (8th/July/2005):
+<a href="https://www.marxist.com/noam-chomsky-marxism-authoritarianism1151004.htm">https://www.marxist.com/noam-chomsky-marxism-authoritarianism1151004.htm</a>
+</p>
+
+<p>
+Kulegin, A. M. ‘All-Russian Congress of Workers' and Soldiers' Soviet
+Deputies, Second', in <i>Saint</i> <i>Petersburg</i> <i>Encyclopaedia</i>, available
+online: <a href="http://www.encspb.ru/object/2804022647?lc=en">http://www.encspb.ru/object/2804022647?lc=en</a>
+</p>
+
+<p>
+Le Blanc, Paul. ‘Introduction: Leninism in the United States and the
+Decline of the Socialist Workers Party', in Paul Le Blanc (ed.), <i>In
+Defense of American Trotskyism: /Revolutionary Principles and Working-Class Democracy</i>, 1st edition
+  (New York, U.S.A: Fourth Internationalist Tendency: September, 1992),
+  available online:
+  <a href="https://www.marxists.org/history/etol/document/fit/leninismus.htm">https://www.marxists.org/history/etol/document/fit/leninismus.htm</a>
+</p>
+
+<p>
+Lee, Stephen J., <i>Lenin and Revolutionary Russia</i> (London, U.K:
+Routledge, 2003).
+</p>
+
+<p>
+Lenin, Vladimir I. (ed. &amp; trans. Institute of Marxism-Leninism, Central
+Committee of the C.P.S.U). <i>Collected Works</i>, volumes 1-45, reprints
+(Moscow, Russia: Progress Publisher, 1960-1977).
+</p>
+
+<p>
+Lockhart, Robert H. B. /Memoirs of a British Agent: Being an Account of
+the Author's Early Life in Many Lands and of His Official Mission to
+Moscow in 1918/ (London, U.K: Putnam, 1932).
+</p>
+
+<p>
+Lorimer, Doug. <i>Trotsky's theory of Permanent Revolution: A Leninist
+critique</i> (Chippendale, Australia: Resistance Books, 1998).
+</p>
+
+<p>
+Luxemburg, Rosa. ‘Blanquism and Social Democracy' (June, 1906),
+published online by <i>Weekly</i> <i>Worker</i> (22nd/January/2009):
+<a href="https://weeklyworker.co.uk/worker/753/socialism-excludes-minority-rule/">https://weeklyworker.co.uk/worker/753/socialism-excludes-minority-rule/</a>
+</p>
+
+<p>
+&#x2014; (ed. Helen Scott). <i>The Essential Rosa Luxemburg: Reform or
+Revolution and the Mass</i> <i>Strike</i> (Chicago, U.S.A: Haymarket Books,
+2008).
+</p>
+
+<p>
+&#x2014; <i>The Russian Revolution and Leninism or Marxism?</i> (Michigan, U.S.A:
+University of Michigan Press, 1961).
+</p>
+
+<p>
+Mandel, Ernest (trans. Brian Pearce). <i>Marxist Economic Theory, Volume
+II</i> (Delhi, India: Aakar Books, 2014).
+</p>
+
+<p>
+Marx, Karl. ‘Marx to J. Weydemeyer in New York', in Karl Marx &amp;
+Friedrich Engels, <i>Selected</i> <i>Works, Volume 1</i> (Moscow, Russia: Progress
+Publishers, 1976).
+</p>
+
+<p>
+&#x2014; <i>The Class Struggles in France (1848-1850)</i> (London, U.K: Martin
+Lawrence, 1895).
+</p>
+
+<p>
+&#x2014; (trans. the Daily People). <i>The Gotha Program</i> (New York, U.S.A:
+Socialist Labor Party, 1922).
+</p>
+
+<p>
+&#x2014; &amp; Friedrich Engels (ed. Friedrich Engels). <i>Manifesto of the
+Communist Party</i> (New York, U.S.A: New York Labor News Co., 1908).
+</p>
+
+<p>
+ProSocialism. ‘Vanguardism: From Marx &amp; Engels to Vladimir Lenin',
+<i>YouTube</i> (2nd/April/2018): <a href="https://www.youtube.com/watch?v=qz2PEdfIRh8">https://www.youtube.com/watch?v=qz2PEdfIRh8</a>
+</p>
+
+<p>
+Rabinowitch, Alexander. <i>The Bolsheviks Come to Power: The Revolution of
+1917 in</i> <i>Petrograd</i> (London, U.K: Pluto Press, 2004).
+</p>
+
+<p>
+Radkey, Oliver H. <i>Russia Goes to the Polls: The Election to the
+All-Russian Constituent</i> <i>Assembly, 1917</i> (Ithaca, U.S.A: Cornell
+University Press, 1989).
+</p>
+
+<p>
+Sovnarkom (trans. Emanuel Aronsberg). ‘Decree on Workers' Control'
+(November, 1917), in James Bunyan &amp; Harold H. Fisher, <i>The Bolshevik
+Revolution, 1917-1918: Documents and Materials</i> (Stanford, U.S.A:
+Stanford University Press, 1961).
+</p>
+
+<p>
+Trotsky, Leon. <i>Dictatorship vs. Democracy (Terrorism and Communism): A
+Reply to Karl</i> <i>Kautsky</i> (New York, U.S.A: Workers Party of America,
+1922).
+</p>
+
+<p>
+&#x2014; ‘The Draft Program of the Comintern', <i>The Militant</i>, Volume 1,
+Number 2 (1st/December/1928).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5198f0f" class="outline-2">
+<h2 id="org5198f0f">Notes</h2>
+<div class="outline-text-2" id="text-org5198f0f">
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For the sake of convenience, the distinction between the RSFSR and the USSR has been collapsed;
+henceforth, we will refer only to the USSR.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For example, see Heiko Khoo, <a href="https://www.marxist.com/noam-chomsky-marxism-authoritarianism1151004.htm">‘Noam Chomsky and Marxism: On the roots of modern
+"authoritarianism"’</a>, <i>In Defence of Marxism</i> (8th/July/2005):
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://youtu.be/Zx6VlKOU1AM?t=1227">Noam Chomsky, interviewed on Roda Viva (9th/December/1996), available online:</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Q&amp;A at an unspecified event, available online: <a href="https://youtu.be/l_jRd59qy0A?t=121">https://youtu.be/l_jRd59qy0A?t=121</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.5" class="footnum" href="#fnr.5" role="doc-backlink">5</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., interview with Christopher Helali, ‘Noam Chomsky on Revolutionary Violence, Communism and the American Left’, Pax Marxista (12th/March/2013): <a href="https://chomsky.info/20130312/">https://chomsky.info/20130312/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.6" class="footnum" href="#fnr.6" role="doc-backlink">6</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Vladimir I. Lenin (ed. &amp; trans. Stepan Apresyan &amp; Jim Riordan), Collected Works, Volume 25: June- September 1917 (Moscow, Russia: Progress Publisher, 1974), § ‘The State and Revolution’ (August- September, 1917), pp. 420-421.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.7" class="footnum" href="#fnr.7" role="doc-backlink">7</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, unspecified Q&amp;A: <a href="https://youtu.be/l_jRd59qy0A?t=54">https://youtu.be/l_jRd59qy0A?t=54</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.8" class="footnum" href="#fnr.8" role="doc-backlink">8</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.9" class="footnum" href="#fnr.9" role="doc-backlink">9</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.10" class="footnum" href="#fnr.10" role="doc-backlink">10</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, CW, XXIX, § ‘Report of the Central Committee’ (March, 1919), p. 157.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.11" class="footnum" href="#fnr.11" role="doc-backlink">11</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., § ‘The Third International and its place in history’ (April, 1919), p. 310.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.12" class="footnum" href="#fnr.12" role="doc-backlink">12</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+In general, see: Jack Barnes, Their Trotsky and Ours (New York, U.S.A: Pathfinder Press, 2008); Doug Lorimer, Trotsky’s theory of Permanent Revolution: A Leninist critique (Chippendale, Australia: Resistance Books, 1998).
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.13" class="footnum" href="#fnr.13" role="doc-backlink">13</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Noam Chomsky, ‘Manufacturing Consent: The Political Economy of the Mass Media’, lecture at
+University of Wisconsin (15th/March/1989), available online: <a href="https://youtu.be/WsC0q3CO6lM?t=272">https://youtu.be/WsC0q3CO6lM?t=272</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.14" class="footnum" href="#fnr.14" role="doc-backlink">14</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.15" class="footnum" href="#fnr.15" role="doc-backlink">15</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Rosa Luxemburg (ed. Helen Scott), The Essential Rosa Luxemburg: Reform or Revolution and the Mass Strike (Chicago, U.S.A: Haymarket Books, 2008), p. 161.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.16" class="footnum" href="#fnr.16" role="doc-backlink">16</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Ibid.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.17" class="footnum" href="#fnr.17" role="doc-backlink">17</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ead</i>., The Russian Revolution and Leninism or Marxism? (Michigan, U.S.A: University of Michigan Press, 1961), p. 85.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.18" class="footnum" href="#fnr.18" role="doc-backlink">18</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.19" class="footnum" href="#fnr.19" role="doc-backlink">19</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ead</i>., ‘Blanquism and Social Democracy’ (June, 1906), published online by Weekly Worker (22nd/January/2009): <a href="https://weeklyworker.co.uk/worker/753/socialism-excludes-minority-rule/">https://weeklyworker.co.uk/worker/753/socialism-excludes-minority-rule/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.20" class="footnum" href="#fnr.20" role="doc-backlink">20</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.21" class="footnum" href="#fnr.21" role="doc-backlink">21</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Ead., The Russian Revolution, p. 29.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.22" class="footnum" href="#fnr.22" role="doc-backlink">22</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 35.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.23" class="footnum" href="#fnr.23" role="doc-backlink">23</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 38.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.24" class="footnum" href="#fnr.24" role="doc-backlink">24</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 39.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.25" class="footnum" href="#fnr.25" role="doc-backlink">25</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 80.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.26" class="footnum" href="#fnr.26" role="doc-backlink">26</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Karl Kautsky (trans. Algie M. Simons), The Road to Power (Chicago, U.S.A: Samuel A. Block, 1909), pp. 72-73.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.27" class="footnum" href="#fnr.27" role="doc-backlink">27</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Karl Marx &amp; Friedrich Engels (ed. Friedrich Engels), Manifesto of the Communist Party (New York, U.S.A: New York Labor News Co., 1908), p. 24.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.28" class="footnum" href="#fnr.28" role="doc-backlink">28</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, <a href="https://youtu.be/WsC0q3CO6lM?t=352">‘Manufacturing Consent’ lecture</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.29" class="footnum" href="#fnr.29" role="doc-backlink">29</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.30" class="footnum" href="#fnr.30" role="doc-backlink">30</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Lenin</i>, CW, XXV, ‘The State and Revolution’ (August-September, 1917), p. 416.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.31" class="footnum" href="#fnr.31" role="doc-backlink">31</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., pp. 440-441.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.32" class="footnum" href="#fnr.32" role="doc-backlink">32</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 402.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.33" class="footnum" href="#fnr.33" role="doc-backlink">33</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 409.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.34" class="footnum" href="#fnr.34" role="doc-backlink">34</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.35" class="footnum" href="#fnr.35" role="doc-backlink">35</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Manufacturing Consent’ lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=272">https://youtu.be/WsC0q3CO6lM?t=272</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.36" class="footnum" href="#fnr.36" role="doc-backlink">36</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Cf. Paul D'Amato, ‘The myth of Lenin’s elitism’, International Socialist Review, Issue 60 (July-August, 2008): <a href="https://www.isreview.org/issues/60/feat-leninmyth.shtml">https://www.isreview.org/issues/60/feat-leninmyth.shtml</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.37" class="footnum" href="#fnr.37" role="doc-backlink">37</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For a summary of Vanguardism based primarily upon the writings of Marx, Engels, and Lenin, see ProSocialism, ‘Vanguardism: From Marx &amp; Engels to Vladimir Lenin’, YouTube (2nd/April/2018): <a href="https://www.youtube.com/watch?v=qz2PEdfIRh8">https://www.youtube.com/watch?v=qz2PEdfIRh8</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.38" class="footnum" href="#fnr.38" role="doc-backlink">38</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, VIII, § ‘Speech on the Question of the Relations Between Workers and Intellectuals within the Social-Democratic Organisations' (May, 1905), p. 408.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.39" class="footnum" href="#fnr.39" role="doc-backlink">39</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., X, § ‘The Reorganisation of the Party' (November, 1905), p. 36, n. *.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.40" class="footnum" href="#fnr.40" role="doc-backlink">40</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXXIV, § ‘To Maxim Gorky' (February, 1908), p. 379.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.41" class="footnum" href="#fnr.41" role="doc-backlink">41</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXXI, § ‘The terms of admission into the Communist International' (July, 1920), p. 210.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.42" class="footnum" href="#fnr.42" role="doc-backlink">42</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=423">https://youtu.be/WsC0q3CO6lM?t=423</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.43" class="footnum" href="#fnr.43" role="doc-backlink">43</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘The Concentration of Power and the Political Economy of Human Rights', lecture at Clark University (27th or 28th/September/1994), available online: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.44" class="footnum" href="#fnr.44" role="doc-backlink">44</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For the former, see Robert H. B. Lockhart, <i>Memoirs of a British Agent: Being an Account of the Author's Early Life in Many Lands and of His Official Mission to Moscow in 1918</i> (London, U.K: Putnam, 1932), esp. pp. 171-172, 196-197. For the latter, see Alexander Rabinowitch, <i>The Bolsheviks Come to Power: The Revolution of 1917 in Petrograd</i> (London, U.K: Pluto Press, 2004), e.g., pp. xvii, 179, 311. Also see Paul Le Blanc, ‘Introduction: Leninism in the United States and the Decline of the Socialist Workers Party', in Paul Le Blanc (ed.), <i>In Defense of American Trotskyism: Revolutionary Principles and Working-Class Democracy</i>, 1st edition (New York, U.S.A: Fourth Internationalist Tendency: September, 1992), available online: <a href="https://www.marxists.org/history/etol/document/fit/leninismus.htm">https://www.marxists.org/history/etol/document/fit/leninismus.htm</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.45" class="footnum" href="#fnr.45" role="doc-backlink">45</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.46" class="footnum" href="#fnr.46" role="doc-backlink">46</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., interviewed in ‘Human Resources: Social Engineering in the 20th Century' documentary (2010), available online: <a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.47" class="footnum" href="#fnr.47" role="doc-backlink">47</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XXXI, § ‘“Left-Wing” Communism&#x2014;An Infantile Disorder' (April-May, 1920), p. 60.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.48" class="footnum" href="#fnr.48" role="doc-backlink">48</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Oliver H. Radkey, <i>Russia Goes to the Polls: The Election to the All-Russian Constituent Assembly, 1917</i> (Ithaca, U.S.A: Cornell University Press, 1989), p. 6.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.49" class="footnum" href="#fnr.49" role="doc-backlink">49</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 51.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.50" class="footnum" href="#fnr.50" role="doc-backlink">50</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+That said, it is of course true that Marxists regard bourgeois democracy as a step forward compared to both feudalism and bourgeois autocracy. For example, consider the infamous praise for capitalism in the <i>Communist Manifesto</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.51" class="footnum" href="#fnr.51" role="doc-backlink">51</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+E.g., Lenin, <i>CW</i>, XXV, § ‘All Power to the Soviets!' (July, 1917), pp. 155-156.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.52" class="footnum" href="#fnr.52" role="doc-backlink">52</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., § ‘Constitutional Illusions' (August, 1917), p. 200.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.53" class="footnum" href="#fnr.53" role="doc-backlink">53</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Radkey, <i>Russia Goes to the Polls</i>, p. 23.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.54" class="footnum" href="#fnr.54" role="doc-backlink">54</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=423">https://youtu.be/WsC0q3CO6lM?t=423</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.55" class="footnum" href="#fnr.55" role="doc-backlink">55</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.56" class="footnum" href="#fnr.56" role="doc-backlink">56</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=498">https://youtu.be/WsC0q3CO6lM?t=498</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.57" class="footnum" href="#fnr.57" role="doc-backlink">57</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., in ‘Human Resources' documentary: <a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.58" class="footnum" href="#fnr.58" role="doc-backlink">58</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘The Soviet Union Versus Socialism', <i>Our</i> <i>Generation</i> (Spring-Summer, 1986): <a href="https://chomsky.info/1986____/">https://chomsky.info/1986____/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.59" class="footnum" href="#fnr.59" role="doc-backlink">59</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.60" class="footnum" href="#fnr.60" role="doc-backlink">60</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.61" class="footnum" href="#fnr.61" role="doc-backlink">61</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, CW, XXVI, § ‘Draft Regulations on Workers' Control' (November, 1917), p. 264.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.62" class="footnum" href="#fnr.62" role="doc-backlink">62</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Cf. Maurice Brinton, <i>The Bolsheviks and Workers' Control, 1917 to 1921: The State and Counter-Revolution</i> (London, U.K: Solidarity, 1970), pp. 15-16.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.63" class="footnum" href="#fnr.63" role="doc-backlink">63</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, CW, XXVI, § ‘Draft Regulations on Workers' Control' (November, 1917), pp. 264-265.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.64" class="footnum" href="#fnr.64" role="doc-backlink">64</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Central Executive Committee (trans. Emanuel Aronsberg), ‘Decree on Establishment of the Supreme Council of National Economy' (December, 1917), in James Bunyan &amp; Harold H. Fisher, <i>The Bolshevik</i>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.65" class="footnum" href="#fnr.65" role="doc-backlink">65</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.66" class="footnum" href="#fnr.66" role="doc-backlink">66</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.67" class="footnum" href="#fnr.67" role="doc-backlink">67</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Sovnarkom (trans. Aronsberg), ‘Decree on Workers' Control' (November, 1917), in <i>ibid</i>., pp. 308-310.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.68" class="footnum" href="#fnr.68" role="doc-backlink">68</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+A. M. Kulegin, ‘All-Russian Congress of Workers' and Soldiers' Soviet Deputies, Second', in <i>Saint</i> <i>Petersburg Encyclopaedia</i>, available online: <a href="http://www.encspb.ru/object/2804022647?lc=en">http://www.encspb.ru/object/2804022647?lc=en</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.69" class="footnum" href="#fnr.69" role="doc-backlink">69</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XLII, § ‘Draft Theses on the Role and Functions of the Trade Unions under the New Economic Policy' (January, 1922), p. 380.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.70" class="footnum" href="#fnr.70" role="doc-backlink">70</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXXII, § ‘Once again on the Trade Unions, the current situation and the mistakes of Trotsky and Bukharin' (January, 1921), p. 88.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.71" class="footnum" href="#fnr.71" role="doc-backlink">71</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.72" class="footnum" href="#fnr.72" role="doc-backlink">72</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+In general, see Luxemburg, <i>The Russian Revolution</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.73" class="footnum" href="#fnr.73" role="doc-backlink">73</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Paul H. Avrich, ‘The Bolshevik Revolution and Workers' Control in Russian Industry', <i>Slavic Review</i>, Volume 22, Number 1 (1963), pp. 54-55.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.74" class="footnum" href="#fnr.74" role="doc-backlink">74</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, unspecified Q&amp;A: <a href="https://youtu.be/l_jRd59qy0A?t=37">https://youtu.be/l_jRd59qy0A?t=37</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.75" class="footnum" href="#fnr.75" role="doc-backlink">75</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., in ‘Human Resources' documentary: <a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.76" class="footnum" href="#fnr.76" role="doc-backlink">76</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.77" class="footnum" href="#fnr.77" role="doc-backlink">77</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XXVIII, § ‘Proletarian Revolution and the Renegade Kautsky' (October, 1918), pp. 308-309.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.78" class="footnum" href="#fnr.78" role="doc-backlink">78</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXIX, § ‘Report on Work in the Countryside' (March, 1919), p. 211.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.79" class="footnum" href="#fnr.79" role="doc-backlink">79</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.80" class="footnum" href="#fnr.80" role="doc-backlink">80</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., 212.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.81" class="footnum" href="#fnr.81" role="doc-backlink">81</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., § ‘Report on the Foreign and Home Policy of the Council of People's Commissars' (March, 1919), p. 25.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.82" class="footnum" href="#fnr.82" role="doc-backlink">82</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 32.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.83" class="footnum" href="#fnr.83" role="doc-backlink">83</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For a summary of the NEP, see Ernest Mandel (trans. Brian Pearce), <i>Marxist Economic Theory, Volume II</i> (Delhi, India: Aakar Books, 2014), pp. 550-551.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.84" class="footnum" href="#fnr.84" role="doc-backlink">84</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.85" class="footnum" href="#fnr.85" role="doc-backlink">85</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=532">https://youtu.be/WsC0q3CO6lM?t=532</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.86" class="footnum" href="#fnr.86" role="doc-backlink">86</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘The Soviet Union Versus Socialism'.<br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.87" class="footnum" href="#fnr.87" role="doc-backlink">87</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., Helali interview.<br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.88" class="footnum" href="#fnr.88" role="doc-backlink">88</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.89" class="footnum" href="#fnr.89" role="doc-backlink">89</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Leon Trotsky, <i>Dictatorship vs. Democracy (Terrorism and Communism): A Reply to Karl Kautsky</i> (New York, U.S.A: Workers Party of America, 1922), pp. 150-151.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.90" class="footnum" href="#fnr.90" role="doc-backlink">90</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 153.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.91" class="footnum" href="#fnr.91" role="doc-backlink">91</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 135.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.92" class="footnum" href="#fnr.92" role="doc-backlink">92</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.93" class="footnum" href="#fnr.93" role="doc-backlink">93</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XXVII, § ‘The Immediate Tasks of the Soviet Government' (March-April, 1918), pp. 268-269.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.94" class="footnum" href="#fnr.94" role="doc-backlink">94</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Friedrich Engels, ‘On Authority', in Robert C. Tucker (ed.), <i>The Marx-Engels Reader</i>, 2nd edition (New York, U.S.A: W. W. Norton &amp; Company, 1978), p. 731.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.95" class="footnum" href="#fnr.95" role="doc-backlink">95</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., pp. 731-732.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.96" class="footnum" href="#fnr.96" role="doc-backlink">96</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., p. 732.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.97" class="footnum" href="#fnr.97" role="doc-backlink">97</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘The Soviet Union Versus Socialism'.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.98" class="footnum" href="#fnr.98" role="doc-backlink">98</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Brinton, <i>The Bolsheviks and Workers' Control</i>, p. xi, n. 10.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.99" class="footnum" href="#fnr.99" role="doc-backlink">99</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Isaac Deutscher, <i>The Prophet Armed: Trotsky, 1879-1921</i> (Oxford, U.K: Oxford University Press, 1954), p. 76.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.100" class="footnum" href="#fnr.100" role="doc-backlink">100</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.101" class="footnum" href="#fnr.101" role="doc-backlink">101</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=498">https://youtu.be/WsC0q3CO6lM?t=498</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.102" class="footnum" href="#fnr.102" role="doc-backlink">102</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>: <a href="https://youtu.be/WsC0q3CO6lM?t=592">https://youtu.be/WsC0q3CO6lM?t=592</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.103" class="footnum" href="#fnr.103" role="doc-backlink">103</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>: <a href="https://youtu.be/WsC0q3CO6lM?t=645">https://youtu.be/WsC0q3CO6lM?t=645</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.104" class="footnum" href="#fnr.104" role="doc-backlink">104</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>: <a href="https://youtu.be/WsC0q3CO6lM?t=787">https://youtu.be/WsC0q3CO6lM?t=787</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.105" class="footnum" href="#fnr.105" role="doc-backlink">105</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.106" class="footnum" href="#fnr.106" role="doc-backlink">106</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.107" class="footnum" href="#fnr.107" role="doc-backlink">107</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., in ‘Human Resources' documentary: <a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.108" class="footnum" href="#fnr.108" role="doc-backlink">108</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For a refutation of the state-capitalist counter-thesis, see Mandel (trans. Pearce), <i>Marxist Economic Theory</i>, II, pp. 561 ff.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.109" class="footnum" href="#fnr.109" role="doc-backlink">109</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., pp. 556-557.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.110" class="footnum" href="#fnr.110" role="doc-backlink">110</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For the chronology of these nationalisations, see: <i>ibid</i>, p. 549; Stephen J. Lee, <i>Lenin and Revolutionary Russia</i> (London, U.K: Routledge, 2003), p. 100; Peter J. Boettke, <i>The Political Economy of Soviet Socialism: The Formative Years, 1918-1928</i> (New York, U.S.A: Springer Science+Business Media, L.L.C, 1990), p. 64.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.111" class="footnum" href="#fnr.111" role="doc-backlink">111</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Concentration of Power' lecture: <a href="https://youtu.be/_SmWNaffdUA?t=3446">https://youtu.be/_SmWNaffdUA?t=3446</a><br />
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.112" class="footnum" href="#fnr.112" role="doc-backlink">112</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Karl Marx (trans. the Daily People), <i>The Gotha Program</i> (New York, U.S.A: Socialist Labor Party, 1922), p. 48. Marx says: “Between the capitalist and the communist systems”. However, it needs to be remembered that Marx used “communism” more broadly than later Marxists, dividing communism into a “first phase” (<i>ibid</i>., p. 31), which later Marxists called “socialism” (e.g., Lenin, <i>CW</i>, XXV, § ‘The State and Revolution' (August-September, 1917), pp. 470, 472), and a “higher phase” (Marx, <i>Gotha Program</i>, p. 31), which later Marxists continued to call “communism”. In other words, when Marx says that the dictatorship of the proletariat is between capitalism and communism, “communism” here (without further qualification) includes both the “first” and “higher” phases, which means that the dictatorship of the proletariat is between capitalism and <i>the first phase of communism</i>, or in later Marxist usage: between capitalism and socialism.
+There is no need to make such inferences, however, since Marx himself explicitly stated as such. Thus, in his 1850 monograph <i>The Class Struggles in France (1848-1850)</i> (London, U.K: Martin Lawrence, 1895), pp. 125-126, Marx described the dictatorship of the proletariat as “the necessary transit point to the <i>abolition of class distinctions generally</i>, to the abolition of all the relations of production on which they rest, to the abolition of all the social relations that correspond to these relations of production, to the revolutionising of all the ideas that result from these social relations.” Likewise, in his 1852 letter entitled ‘Marx to J. Weydemeyer in New York', in Karl Marx &amp; Friedrich Engels, <i>Selected Works, Volume 1</i> (Moscow, Russia: Progress Publishers, 1976), p. 528, Marx stated that “this dictatorship itself only constitutes the transition to the abolition of all classes and to a classless society.” Finally, in his 1872 pamphlet, <i>The Housing Question</i> (New York, U.S.A: International Publishers, 1935), p. 80, Engels described “the dictatorship of the proletariat as the transitional stage to the abolition of classes” as one of the “views” already expressed in the <i>Communist Manifesto</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.113" class="footnum" href="#fnr.113" role="doc-backlink">113</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+This is already implied by the fact that Marx (<i>Gotha Program</i>, pp. 28-31) described the “first phase” of communism (later called socialism) as one in which the means of production are owned in common and everyone is rewarded from the common stock of goods proportionally to their labour&#x2014;in other words, a classless society. Thus, if class exists under capitalism and does not exist under socialism/lower-phase communism, then it follows that the abolition of both capitalism and class in general must occur under the dictatorship of the proletariat.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.114" class="footnum" href="#fnr.114" role="doc-backlink">114</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+E.g., Lenin, <i>CW</i>, XXVIII, § ‘Proletarian Revolution and the Renegade Kautsky' (October, 1918), pp. 257, 293; <i>ibid</i>., § ‘Tasks of the Trade Unions' (December-January, 1918-1919), p. 382; <i>ibid</i>., § ‘Speech at the opening session of the congress' (March, 1920), p. 455.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.115" class="footnum" href="#fnr.115" role="doc-backlink">115</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXVI, § ‘Report on the activities of the Council of People's Commissars' (January, 1918), pp. 464-
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.116" class="footnum" href="#fnr.116" role="doc-backlink">116</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXVII, § ‘“Left-Wing” Childishness and the Petty-Bourgeois Mentality' (May, 1918), pp. 335-336.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.117" class="footnum" href="#fnr.117" role="doc-backlink">117</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXXII, § ‘Report on Tax in Kind' (April, 1921), pp. 295-296.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.118" class="footnum" href="#fnr.118" role="doc-backlink">118</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., § ‘The Tax in Kind' (April, 1921), p. 329.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.119" class="footnum" href="#fnr.119" role="doc-backlink">119</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+E.g., <i>ibid</i>., XXXIII, § ‘The New Economic Policy and the Tasks of the Political Education Departments' (October, 1921), pp. 64-65.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.120" class="footnum" href="#fnr.120" role="doc-backlink">120</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+E.g., <i>ibid</i>., XXXII, § ‘Report on the Tax in Kind' (April, 1921), p. 296.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.121" class="footnum" href="#fnr.121" role="doc-backlink">121</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For a summary, see Mandel (trans. Pearce), <i>Marxist Economic Theory</i>, II, p. 550.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.122" class="footnum" href="#fnr.122" role="doc-backlink">122</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For example, concerning “Concessions to foreign capitalists”, Lenin (<i>CW</i>, XXXIII, § ‘The New Economic Policy and the Tasks of the Political Education Departments', p. 64) noted in October of 1921 that “only very few have been accepted, especially when compared with the number we have offered”. More importantly, Lenin continued to describe the operation of “socialist factories” after the NEP, e.g., in April of 1921 (<i>ibid</i>., XXXII, § ‘Report on the Tax in Kind', pp. 295-296), and Mandel (trans. Pearce, <i>Marxist Economic Theory</i>, II, p. 551) describes “the state sector” as “essentially consisting of largescale industry” and “the private sector” as “mainly agricultural and commercial” in 1923.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.123" class="footnum" href="#fnr.123" role="doc-backlink">123</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Under Stalin, the socialisation of the means of production was extended&#x2014;by force&#x2014;across the domain of agriculture as well, although much of the economy remained non-socialist even after that (and of course, the USSR remained influenced by the global market, and thereby the Law of Value); see the discussion above concerning socialism in the USSR, and especially, Mandel, <i>op cit</i>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.124" class="footnum" href="#fnr.124" role="doc-backlink">124</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘The Soviet Union Versus Socialism'.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.125" class="footnum" href="#fnr.125" role="doc-backlink">125</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XXV, § ‘The Impending Catastrophe and How to Combat It' (September, 1917), p. 362.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.126" class="footnum" href="#fnr.126" role="doc-backlink">126</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+For various other related discussions by Lenin (on state capitalism as a means or precursor to socialism), also see: <i>ibid</i>., p. 363; <i>ibid</i>., XXVII, § Report on the Immediate Tasks of the Soviet Government' (April, 1918), pp. 294-297; <i>ibid</i>., § ‘“Left-Wing” Childishness and the Petty-Bourgeois Mentality' (May, 1918), pp. 334-335, 338-342, 351; <i>ibid</i>., XXXII, § ‘The Tax in Kind' (April, 1921), pp. 347-349; <i>ibid</i>., XXXIII, § ‘Fourth Anniversary of the October Revolution' (October, 1921), p. 58; etc.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.127" class="footnum" href="#fnr.127" role="doc-backlink">127</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Chomsky, ‘Manufacturing Consent' lecture: <a href="https://youtu.be/WsC0q3CO6lM?t=645">https://youtu.be/WsC0q3CO6lM?t=645</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.128" class="footnum" href="#fnr.128" role="doc-backlink">128</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Id</i>., in ‘Human Resources' documentary: <a href="https://youtu.be/1pCigAw2-0g?t=1901">https://youtu.be/1pCigAw2-0g?t=1901</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.129" class="footnum" href="#fnr.129" role="doc-backlink">129</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Lenin, <i>CW</i>, XXVII, § ‘“Left-Wing” Childishness and the Petty-Bourgeois Mentality' (May, 1918), p. 335.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.130" class="footnum" href="#fnr.130" role="doc-backlink">130</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<i>Ibid</i>., XXVI, § ‘Report on the Activities of the Council of People's Commissars' (January, 1918), pp. 464-465.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.131" class="footnum" href="#fnr.131" role="doc-backlink">131</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Also see Leon Trotsky, ‘The Draft Program of the Comintern', <i>The Militant</i>, Volume 1, Number 2 (1st/December/1928), pp. 4 ff. (§ ‘The Theoretical Tradition of The Party').
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.132" class="footnum" href="#fnr.132" role="doc-backlink">132</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+Luxemburg, <i>The Russian Revolution</i>, p. 80.
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: JL &amp; MA</p>
+<p class="date">Created: 2022-11-13 Sun 22:11</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
