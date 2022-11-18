@@ -4,8 +4,8 @@
 #+SETUPFILE: https://distro.tube/org-html-themes/org/theme-readtheorg.setup
 #+EXPORT_FILE_NAME: index.html
 #+HTML_HEAD: <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js" integrity="sha512-GA1YgNe8NTU3XMDMofUTpTNqMsPUL6VjYgc6NjOUTA/6pwTFlTmFc/tk+LnDfXD3/mNGZcik9kvfAjeVPTHisA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
-#+HTML_HEAD: <script src="script.js" defer></script>
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="styles.css" title="custom"/>
+#+HTML_HEAD: <script src="script.js" defer></script>
 #+OPTIONS: num:nil
 
 Version 1.1 [15th/July/2020]

@@ -5,6 +5,7 @@ const nav = document.createElement("nav");
 nav.id = "nav";
 nav.append(toc);
 document.getElementsByTagName("body")[0].prepend(nav);
+toc.style.display = "block";
 
 const slideout = new Slideout({
   panel: document.getElementById("content"),

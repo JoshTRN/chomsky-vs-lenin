@@ -28,6 +28,7 @@ body {
 #table-of-contents {
   background-color: rgb(0, 0, 0);
   border-right-color: rgb(209, 191, 161);
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
