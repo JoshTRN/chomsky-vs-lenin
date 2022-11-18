@@ -19,6 +19,9 @@ body {
 #content {
   background-color: rgb(1, 6, 8);
   margin-left: 0;
+  transition-duration: 200ms;
+  transition-property: max-width;
+  transition-timing-function: ease-in;
 }
 
 #table-of-contents {

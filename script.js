@@ -13,6 +13,27 @@ const slideout = new Slideout({
   tolerance: 70,
 });
 
+slideout.on("beforeclose", function () {
+  const content = document.getElementById("content");
+  content.style.maxWidth = "860px";
+  if (window.innerWidth > 768) {
+    const offset = window.innerWidth - 300;
+    content.style.maxWidth = offset >= 860 ? "860px" : offset + "px";
+  } else {
+    content.style.maxWidth = "860px";
+  }
+});
+
+slideout.on("open", function () {
+  console.log(href);
+  if (href) href.scrollIntoView({ block: 'center' });
+  if (window.innerWidth > 768) {
+    const content = document.getElementById("content");
+    const offset = window.innerWidth - 300;
+    content.style.maxWidth = offset >= 860 ? "860px" : offset + "px";
+  }
+});
+
 const manageSlideoutBasedOnScreenWidth = () => {
   if (window.innerWidth > 768) {
     const content = document.getElementById("content");
@@ -50,7 +71,7 @@ Array.from(
 
 window.addEventListener("transitionend", () => {
   if (href) {
-    href.scrollIntoView();
+    href.scrollIntoView({ block: 'center' });
     href = false;
   }
 });
