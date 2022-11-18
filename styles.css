@@ -17,7 +17,8 @@ body {
 }
 
 #content {
-  background-color: rgb(1, 6, 8);
+  /* background-color: rgb(0, 0, 0); */
+  background-color: #020a0d;
   margin-left: 0;
   transition-duration: 200ms;
   transition-property: max-width;
