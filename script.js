@@ -69,7 +69,10 @@ Array.from(
   });
 });
 
-window.addEventListener("transitionend", () => {
+window.addEventListener("transitionend", (e) => {
+
+  if (e.type == "touchend") return;
+  console.log(e)
   if (href) {
     href.scrollIntoView({ block: 'center' });
     href = false;
